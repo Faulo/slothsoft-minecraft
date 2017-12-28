@@ -1,0 +1,8 @@
+vendor/
+composer.lock
+.DS_Store
+
+#resources
+/res/r.0.0.mcr
+/res/r.-1.-1.mca
+/res/server.txt
