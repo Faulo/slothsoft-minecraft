@@ -1,4 +1,4 @@
-Files and Resources and Hypertext
-=================================
+Minecraft
+=========
 
-A Farah module.
+A Farah module containing the Minecraft section of slothsoft.net.
