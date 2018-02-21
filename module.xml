@@ -16,13 +16,60 @@ Llo
 -->
   <default-configuration/>
   <assets>
+  	
+    <resource-directory name="data" path="data" type="application/x-php"/>
+    <resource-directory name="css" path="stylesheet" type="text/css"/>
+    <resource-directory name="js" path="script" type="application/javascript"/>
+    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+    <resource-directory name="pages" path="pages" type="application/xml"/>
+    <directory name="static">
+	    <resource name="news" path="news.xml" type="application/xml"/>
+	    <resource name="tectonicus" path="tectonicus/index.html" type="text/html"/>
+	    <resource name="tectonicus" path="tectonicus_old/index.html" type="text/html"/>
+	    <resource name="log" path="log.xml" type="application/xml"/>
+	    <resource-directory name="log" path="log" type="application/xml"/>
+	    <resource name="players-faulo" path="players/Faulo" type="application/x-nbt"/>
+	    <resource-directory name="players" path="C:\Minecraft\players" type="application/x-nbt"/>
+	    <resource name="map-mcr" path="r.0.0.mcr" type="application/x-mcr"/>
+	    <resource name="map-mca" path="r.-1.-1.mca" type="application/x-mca"/>
+	    <resource name="hardware" path="hardware.txt" type="text/csv">
+	      <options del="=" sep="" cols="2" output="assoc"/>
+	    </resource>
+	    <resource name="server" path="server.txt" type="text/csv">
+	      <options del="=" sep="" cols="2" output="assoc"/>
+	    </resource>
+	    <resource name="info" path="info.txt" type="text/csv">
+	      <options del=":" sep="" cols="2" output="assoc"/>
+	    </resource>
+	    <resource name="map-2D-n" path="maps/Map.2D.normal.png" type="image/png"/>
+	    <resource name="map-3D-n" path="maps/Map.3D.normal.png" type="image/png"/>
+	    <resource name="map-2D-c" path="maps/Map.2D.cave.png" type="image/png"/>
+	    <resource name="map-3D-c" path="maps/Map.3D.cave.png" type="image/png"/>
+	    <resource name="heart.0" path="heart.0.svg" type="image/svg+xml"/>
+	    <resource name="heart.1" path="heart.1.svg" type="image/svg+xml"/>
+	    <resource name="heart.2" path="heart.2.svg" type="image/svg+xml"/>
+	    <resource name="food.0" path="food.0.svg" type="image/svg+xml"/>
+	    <resource name="food.1" path="food.1.svg" type="image/svg+xml"/>
+	    <resource name="food.2" path="food.2.svg" type="image/svg+xml"/>
+	    <resource-directory name="maps" path="maps" type="image/png"/>
+	    <resource-directory name="blocks" path="blocks" type="image/png"/>
+	    <resource-directory name="pics" path="pictures" type="image/*"/>
+	    <resource name="chunks" path="chunks.json" type="application/json"/>
+	    <resource name="craft" path="craft.json" type="application/json"/>
+	    <resource name="ids" path="ids.json" type="application/json"/>
+	    <resource name="import" path="import.json" type="application/json"/>
+	    <resource name="mapping" path="mapping.json" type="application/json"/>
+	    <resource name="trade" path="trade.json" type="application/json"/>
+	    <resource name="waypoints" path="waypoints.json" type="application/json"/>
+	</directory>
     <fragment name="home">
       <include-fragment ref="default"/>
       <use-stylesheet ref="css/default"/>
       <fragment name="content">
         <use-template ref="xsl/home"/>
         <include-fragment ref="//slothsoft@core/DOM"/>
-        <use-document ref="//slothsoft@core/static/sites"/>
+        <use-document ref="//farah/sites"/>
         <use-document ref="static/news"/>
         <use-document as="log" ref="log-wrapper"/>
         <use-document as="chat-short" ref="//slothsoft@chat/default"/>
@@ -184,7 +231,7 @@ Llo
       <use-document as="dict.select" ref="//slothsoft@slothsoft/dict.select"/>
     </fragment>
     <fragment name="default">
-      <fragment name="/slothsoft/default"/>
+      <include-fragment ref="//slothsoft/default"/>
       <use-document ref="status"/>
     </fragment>
   </assets>
