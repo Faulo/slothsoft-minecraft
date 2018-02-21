@@ -1,239 +1,191 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<module>
-	<!-- pages -->
-	<fragment name="home">
-		<struc name="default" />
-		<style name="default" />
-		<fragment name="content">
-			<template name="home" />
-			<struc name="/core/DOM" />
-			<res name="/core/sites" load="xml" />
-			<res name="news" load="xml" />
-			<call name="log-wrapper" as="log" />
-			<call name="/chat/default" as="chat-short" />
-		</fragment>
-	</fragment>
+<?xml version="1.0"?>
+<module xmlns="http://schema.slothsoft.net/farah/module" xmlns:sfm="http://schema.slothsoft.net/farah/module">
+  <!--
+Farah Module Manifest
 
-	<fragment name="chat">
-		<param name="chat-database" value="" />
-		<param name="chat-duration" value="7" />
-		<template name="/chat/shoutbox" />
-		<call name="/chat/default" as="chat" />
-	</fragment>
+Module: minecraft
+Vendor: slothsoft
+Farah ID: farah://slothsoft@minecraft
+Composer ID: slothsoft/minecraft
 
-	<fragment name="news">
-		<struc name="default" />
-		<style name="default" />
-		<fragment name="content">
-			<template name="news" />
-			<res name="news" load="xml" />
-		</fragment>
-	</fragment>
+Homepage: http://farah.slothsoft.net/modules/minecraft
+Packagist: https://packagist.org/packages/slothsoft/minecraft
+GitHub: https://github.com/Faulo/slothsoft-minecraft
 
-	<fragment name="log">
-		<struc name="default" />
-		<style name="default" />
-		<call name="log-wrapper" as="content" />
-	</fragment>
-	<fragment name="archive">
-		<struc name="default" />
-		<style name="default" />
-		<call name="/chat/archive" as="content" />
-	</fragment>
-	<fragment name="log-wrapper">
-		<template name="log" />
-		<call name="log-content" />
-	</fragment>
-	<fragment name="log-content">
-		<template name="log.content" />
-		<data name="log" />
-		<data name="status" />
-	</fragment>
-	<fragment name="shoutbox">
-		<struc name="default" />
-		<style name="default" />
-		<call name="/chat/default" as="content" />
-	</fragment>
-	<fragment name="maps">
-		<struc name="default" />
-		<style name="default" />
-		<call name="maps-content" as="content" />
-	</fragment>
-	<fragment name="map-2D-normal">
-		<struc name="map" />
-		<res name="map-2D-n" as="map" />
-	</fragment>
-	<fragment name="map-3D-normal">
-		<struc name="map" />
-		<res name="map-3D-n" as="map" />
-	</fragment>
-	<fragment name="map-2D-cave">
-		<struc name="map" />
-		<res name="map-2D-c" as="map" />
-	</fragment>
-	<fragment name="map-3D-cave">
-		<struc name="map" />
-		<res name="map-3D-c" as="map" />
-	</fragment>
-	<fragment name="infos">
-		<struc name="default" />
-		<style name="default" />
-		<call name="infos-content" as="content" />
-	</fragment>
-	<fragment name="statistic">
-		<struc name="default" />
-		<style name="default" />
-		<call name="statistic-content" as="content" />
-	</fragment>
-	<fragment name="law">
-		<struc name="default" />
-		<style name="default" />
-		<call name="law-content" as="content" />
-	</fragment>
-	<fragment name="mall">
-		<struc name="default" />
-		<style name="default" />
-		<call name="mall-content" as="content" />
-	</fragment>
-	<fragment name="workshop">
-		<struc name="default" />
-		<style name="default" />
-		<call name="workshop-content" as="content" />
-	</fragment>
-	<fragment name="players">
-		<struc name="default" />
-		<style name="default" />
-		<call name="players-content" as="content" />
-	</fragment>
-	<fragment name="pics">
-		<struc name="default" />
-		<style name="default" />
-		<call name="pics-content" as="content" />
-	</fragment>
-	<fragment name="mapTest">
-		<struc name="default" />
-		<style name="default" />
-		<res name="map-mca" as="content" load="xml" />
-	</fragment>
-
-	<!-- <fragment name="log-content"><template name="log"/> <style name="log"/> 
-		<data name="log" as="currentLog"/> <resDir name="log"/> </fragment> -->
-	<fragment name="status">
-		<template name="status" />
-		<struc name="/core/DOM" />
-		<data name="status" />
-	</fragment>
-	<fragment name="maps-content">
-		<template name="maps" />
-		<resDir name="maps" load="status" />
-		<!--<resDir name="/slothsoft/icons" as="icons" load="base64"/> -->
-	</fragment>
-	<fragment name="infos-content">
-		<template name="infos" />
-		<res name="hardware" load="xml" />
-		<res name="server" load="xml" />
-	</fragment>
-	<fragment name="statistic-content">
-		<template name="infos" />
-		<res name="info" load="xml" />
-		<res name="mapping" load="xml" />
-		<!--<resDir name="blocks"/> -->
-	</fragment>
-	<fragment name="law-content">
-		<template name="law" />
-	</fragment>
-	<fragment name="mall-content">
-		<template name="mall" />
-		<res name="trade" load="xml" />
-		<!--<resDir name="blocks"/> -->
-	</fragment>
-	<fragment name="workshop-content">
-		<template name="workshop" />
-		<res name="craft" load="xml" />
-		<!--<resDir name="blocks"/> -->
-	</fragment>
-	<fragment name="players-content">
-		<template name="players" />
-		<resDir name="players" load="status xml" />
-		<!--<resDir name="blocks"/> -->
-		<res name="heart.0" />
-		<res name="heart.1" />
-		<res name="heart.2" />
-		<res name="food.0" />
-		<res name="food.1" />
-		<res name="food.2" />
-	</fragment>
-	<fragment name="pics-content">
-		<template name="pics" />
-		<data name="pics-upload" />
-		<resDir name="pics" load="status" />
-		<!--<resDir name="/slothsoft/icons" as="icons" load="base64"/> -->
-	</fragment>
-
-	<struc name="map">
-		<template name="_map" />
-		<style name="/slothsoft/default" />
-		<style name="/slothsoft/layout" />
-		<style name="/slothsoft/fonts" />
-		<style name="/slothsoft/colors" />
-		<style name="default" />
-		<call name="/slothsoft/navi" as="navi" />
-		<call name="/slothsoft/validator" as="validator" />
-		<call name="/slothsoft/dict.select" as="dict.select" />
-	</struc>
-
-	<!-- Resources -->
-	<!-- misc -->
-	<resource name="news" path="news.xml" type="application/xml" />
-	<resource name="tectonicus" path="tectonicus/index.html" type="text/html" />
-	<resource name="tectonicus" path="tectonicus_old/index.html"
-		type="text/html" />
-	<resource name="log" path="log.xml" type="application/xml" />
-
-	<resourceDir name="log" path="log" type="application/xml" />
-	<resource name="players-faulo" path="players/Faulo" type="application/x-nbt" />
-	<resourceDir name="players" path="C:\Minecraft\players"
-		type="application/x-nbt" />
-	<resource name="map-mcr" path="r.0.0.mcr" type="application/x-mcr" />
-	<resource name="map-mca" path="r.-1.-1.mca" type="application/x-mca" />
-
-
-	<!-- text -->
-	<resource name="hardware" path="hardware.txt" type="text/csv"
-		del="=" sep="" cols="2" output="assoc" />
-	<resource name="server" path="server.txt" type="text/csv" del="="
-		sep="" cols="2" output="assoc" />
-	<resource name="info" path="info.txt" type="text/csv" del=":"
-		sep="" cols="2" output="assoc" />
-
-	<!-- pics -->
-	<resource name="map-2D-n" path="maps/Map.2D.normal.png" type="image/png" />
-	<resource name="map-3D-n" path="maps/Map.3D.normal.png" type="image/png" />
-	<resource name="map-2D-c" path="maps/Map.2D.cave.png" type="image/png" />
-	<resource name="map-3D-c" path="maps/Map.3D.cave.png" type="image/png" />
-
-	<resource name="heart.0" path="heart.0.svg" type="image/svg+xml" />
-	<resource name="heart.1" path="heart.1.svg" type="image/svg+xml" />
-	<resource name="heart.2" path="heart.2.svg" type="image/svg+xml" />
-	<resource name="food.0" path="food.0.svg" type="image/svg+xml" />
-	<resource name="food.1" path="food.1.svg" type="image/svg+xml" />
-	<resource name="food.2" path="food.2.svg" type="image/svg+xml" />
-
-	<resourceDir name="maps" path="maps" type="image/png" />
-	<resourceDir name="blocks" path="blocks" type="image/png" />
-	<resourceDir name="pics" path="pictures" type="image/*" />
-
-	<!-- json -->
-	<resource name="chunks" path="chunks.json" type="application/json" />
-	<resource name="craft" path="craft.json" type="application/json" />
-	<resource name="ids" path="ids.json" type="application/json" />
-	<resource name="import" path="import.json" type="application/json" />
-	<resource name="mapping" path="mapping.json" type="application/json" />
-	<resource name="trade" path="trade.json" type="application/json" />
-	<resource name="waypoints" path="waypoints.json" type="application/json" />
-
-	<struc name="default">
-		<struc name="/slothsoft/default" />
-		<call name="status" />
-	</struc>
+Llo
+-->
+  <default-configuration/>
+  <assets>
+    <fragment name="home">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <fragment name="content">
+        <use-template ref="xsl/home"/>
+        <include-fragment ref="//slothsoft@core/DOM"/>
+        <use-document ref="//slothsoft@core/static/sites"/>
+        <use-document ref="static/news"/>
+        <use-document as="log" ref="log-wrapper"/>
+        <use-document as="chat-short" ref="//slothsoft@chat/default"/>
+      </fragment>
+    </fragment>
+    <fragment name="chat">
+      <param name="chat-database" value=""/>
+      <param name="chat-duration" value="7"/>
+      <use-template ref="//slothsoft@chat/xsl/shoutbox"/>
+      <use-document as="chat" ref="//slothsoft@chat/default"/>
+    </fragment>
+    <fragment name="news">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <fragment name="content">
+        <use-template ref="xsl/news"/>
+        <use-document ref="static/news"/>
+      </fragment>
+    </fragment>
+    <fragment name="log">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="log-wrapper"/>
+    </fragment>
+    <fragment name="archive">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="//slothsoft@chat/archive"/>
+    </fragment>
+    <fragment name="log-wrapper">
+      <use-template ref="xsl/log"/>
+      <use-document ref="log-content"/>
+    </fragment>
+    <fragment name="log-content">
+      <use-template ref="xsl/log.content"/>
+      <use-document ref="data/log"/>
+      <use-document ref="data/status"/>
+    </fragment>
+    <fragment name="shoutbox">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="//slothsoft@chat/default"/>
+    </fragment>
+    <fragment name="maps">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="maps-content"/>
+    </fragment>
+    <fragment name="map-2D-normal">
+      <include-fragment ref="map"/>
+      <use-document as="map" ref="static/map-2D-n"/>
+    </fragment>
+    <fragment name="map-3D-normal">
+      <include-fragment ref="map"/>
+      <use-document as="map" ref="static/map-3D-n"/>
+    </fragment>
+    <fragment name="map-2D-cave">
+      <include-fragment ref="map"/>
+      <use-document as="map" ref="static/map-2D-c"/>
+    </fragment>
+    <fragment name="map-3D-cave">
+      <include-fragment ref="map"/>
+      <use-document as="map" ref="static/map-3D-c"/>
+    </fragment>
+    <fragment name="infos">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="infos-content"/>
+    </fragment>
+    <fragment name="statistic">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="statistic-content"/>
+    </fragment>
+    <fragment name="law">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="law-content"/>
+    </fragment>
+    <fragment name="mall">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="mall-content"/>
+    </fragment>
+    <fragment name="workshop">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="workshop-content"/>
+    </fragment>
+    <fragment name="players">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="players-content"/>
+    </fragment>
+    <fragment name="pics">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="pics-content"/>
+    </fragment>
+    <fragment name="mapTest">
+      <include-fragment ref="default"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="content" ref="static/map-mca"/>
+    </fragment>
+    <fragment name="status">
+      <use-template ref="xsl/status"/>
+      <include-fragment ref="//slothsoft@core/DOM"/>
+      <use-document ref="data/status"/>
+    </fragment>
+    <fragment name="maps-content">
+      <use-template ref="xsl/maps"/>
+      <use-document ref="static/maps"/>
+    </fragment>
+    <fragment name="infos-content">
+      <use-template ref="xsl/infos"/>
+      <use-document ref="static/hardware"/>
+      <use-document ref="static/server"/>
+    </fragment>
+    <fragment name="statistic-content">
+      <use-template ref="xsl/infos"/>
+      <use-document ref="static/info"/>
+      <use-document ref="static/mapping"/>
+    </fragment>
+    <fragment name="law-content">
+      <use-template ref="xsl/law"/>
+    </fragment>
+    <fragment name="mall-content">
+      <use-template ref="xsl/mall"/>
+      <use-document ref="static/trade"/>
+    </fragment>
+    <fragment name="workshop-content">
+      <use-template ref="xsl/workshop"/>
+      <use-document ref="static/craft"/>
+    </fragment>
+    <fragment name="players-content">
+      <use-template ref="xsl/players"/>
+      <use-document ref="static/players"/>
+      <use-document ref="static/heart.0"/>
+      <use-document ref="static/heart.1"/>
+      <use-document ref="static/heart.2"/>
+      <use-document ref="static/food.0"/>
+      <use-document ref="static/food.1"/>
+      <use-document ref="static/food.2"/>
+    </fragment>
+    <fragment name="pics-content">
+      <use-template ref="xsl/pics"/>
+      <use-document ref="data/pics-upload"/>
+      <use-document ref="static/pics"/>
+    </fragment>
+    <fragment name="map">
+      <use-template ref="xsl/_map"/>
+      <use-stylesheet ref="//slothsoft@slothsoft/css/default"/>
+      <use-stylesheet ref="//slothsoft@slothsoft/css/layout"/>
+      <use-stylesheet ref="//slothsoft@slothsoft/css/fonts"/>
+      <use-stylesheet ref="//slothsoft@slothsoft/css/colors"/>
+      <use-stylesheet ref="css/default"/>
+      <use-document as="navi" ref="//slothsoft@slothsoft/navi"/>
+      <use-document as="validator" ref="//slothsoft@slothsoft/validator"/>
+      <use-document as="dict.select" ref="//slothsoft@slothsoft/dict.select"/>
+    </fragment>
+    <fragment name="default">
+      <fragment name="/slothsoft/default"/>
+      <use-document ref="status"/>
+    </fragment>
+  </assets>
 </module>
