@@ -2,9 +2,9 @@
 namespace Slothsoft\Farah;
 
 use Slothsoft\Core\DOMHelper;
-use Slothsoft\Farah\Module\Assets\AssetInterface;
+use Slothsoft\Farah\Module\FarahUrl\FarahUrlArguments;
 
-return function(AssetInterface $asset) {
+return function(FarahUrlArguments $args) {
     $firstYear = 2010;
     $firstMonth = 12;
     
