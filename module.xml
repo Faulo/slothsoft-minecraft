@@ -18,7 +18,7 @@ Llo
   <assets>
   	
     <directory name="data" path="data">
-    	<controller name="sites.log" class="Slothsoft\Minecraft\SitesController"/>
+    	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
     </directory>
     <resource-directory name="css" path="stylesheet" type="text/css"/>
     <resource-directory name="js" path="script" type="application/javascript"/>

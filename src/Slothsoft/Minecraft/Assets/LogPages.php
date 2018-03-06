@@ -1,8 +1,8 @@
 <?php
-namespace Slothsoft\Minecraft;
+namespace Slothsoft\Minecraft\Assets;
 
-use Slothsoft\Farah\Module\Controllers\ControllerImplementation;
 use Slothsoft\Farah\Module\FarahUrl\FarahUrl;
+use Slothsoft\Farah\Module\Node\Asset\AssetImplementation;
 use Slothsoft\Farah\Module\Results\DOMDocumentResult;
 use Slothsoft\Farah\Module\Results\ResultInterface;
 use DOMDocument;
@@ -12,9 +12,9 @@ use DOMDocument;
  * @author Daniel Schulz
  *        
  */
-class SitesController extends ControllerImplementation
+class LogPages extends AssetImplementation
 {
-    public function createResult(FarahUrl $url) : ResultInterface {
+    protected function loadResult(FarahUrl $url) : ResultInterface {
         $firstYear = 2010;
         $firstMonth = 12;
         
