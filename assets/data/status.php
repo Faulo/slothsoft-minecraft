@@ -9,7 +9,7 @@ $tableName = 'minecraft_log';
 
 $dbmsTable = Manager::getTable($dbName, $tableName);
 
-$timeStart = $this->httpRequest->time - TIME_MONTH;
+$timeStart = $this->httpRequest->time - Seconds::MONTH;
 
 $messageTypes = [
     'login' => Log::$messageTypes['login'],
@@ -64,7 +64,7 @@ $dataDoc->appendChild($dataRoot);
 foreach ($playersTotal as $player => $time) {
     $parent = $dataDoc->createElement('player');
     $parent->setAttribute('date-stamp', $time);
-    $parent->setAttribute('date-datetime', date(DATE_DATETIME, $time));
+    $parent->setAttribute('date-datetime', date(DateTimeFormatter::FORMAT_DATETIME, $time));
     if (isset($playersOnline[$player])) {
         $parent->setAttribute('online', '');
     }
@@ -74,7 +74,7 @@ foreach ($playersTotal as $player => $time) {
 if ($lastSystem) {
     $parent = $dataDoc->createElement('system');
     $parent->setAttribute('date-stamp', $lastSystem['time']);
-    $parent->setAttribute('date-datetime', date(DATE_DATETIME, $lastSystem['time']));
+    $parent->setAttribute('date-datetime', date(DateTimeFormatter::FORMAT_DATETIME, $lastSystem['time']));
     $parent->setAttribute('message', $lastSystem['message']);
     if ($lastSystem['type'] == $messageTypes['boot'] or true) { // todo: re-implement online boot message
         $parent->setAttribute('online', '');

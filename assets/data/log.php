@@ -24,9 +24,9 @@ $now = $this->httpRequest->time;
 $now += 60;
 $now -= $now % 60;
 
-$timeStart = $now - TIME_DAY * 2;
+$timeStart = $now - Seconds::DAY * 2;
 $timeStop = $now;
-$timeStep = TIME_HOUR;
+$timeStep = Seconds::HOUR;
 
 $messageTypes = [
     'login' => Log::$messageTypes['login'],
@@ -92,7 +92,7 @@ for ($i = $timeStart; $i <= $timeStop; $i += $timeStep) {
     $time = round($i / $timeStep) * $timeStep;
     $parent = $dataDoc->createElement('clock');
     $parent->setAttribute('date-stamp', $time);
-    $parent->setAttribute('date-time', substr(date(DATE_TIME, $time), 0, 5));
+    $parent->setAttribute('date-time', substr(date(DateTimeFormatter::FORMAT_TIME, $time), 0, 5));
     $dataRoot->appendChild($parent);
 }
 

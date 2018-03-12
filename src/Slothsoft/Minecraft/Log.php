@@ -59,14 +59,14 @@ class Log
 
     public function watch($logFile, $logInterval)
     {
-        echo sprintf(self::WATCH_START, date(DATE_DATETIME), $logFile, PHP_EOL);
+        echo sprintf(self::WATCH_START, date(DateTimeFormatter::FORMAT_DATETIME), $logFile, PHP_EOL);
         try {
             while (sleep($logInterval) === 0) {
                 if (file_exists($logFile) and $rawData = file($logFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES)) {
                     file_put_contents($logFile, '');
                     foreach ($rawData as $line) {
                         $line = trim($line);
-                        echo sprintf(self::WATCH_LINE, date(DATE_DATETIME), $line, PHP_EOL);
+                        echo sprintf(self::WATCH_LINE, date(DateTimeFormatter::FORMAT_DATETIME), $line, PHP_EOL);
                         $this->dbmsTable->insert([
                             'raw' => utf8_encode($line)
                         ]);
@@ -76,7 +76,7 @@ class Log
                 }
             }
         } catch (Exception $e) {
-            echo sprintf(self::WATCH_ERROR, date(DATE_DATETIME), PHP_EOL, $e->getMessage());
+            echo sprintf(self::WATCH_ERROR, date(DateTimeFormatter::FORMAT_DATETIME), PHP_EOL, $e->getMessage());
         }
     }
 
@@ -301,7 +301,7 @@ class Log
      * }
      * if ($node) {
      * $elementCount++;
-     * $node->setAttribute('time-utc', date(DATE_ATOM, $time));
+     * $node->setAttribute('time-utc', date(DateTimeFormatter::FORMAT_ATOM, $time));
      * $node->setAttribute('time', date('d.m.y H:i:s', $time));
      * if ($msg !== null) {
      * $node->appendChild($this->doc->createTextNode($msg));
