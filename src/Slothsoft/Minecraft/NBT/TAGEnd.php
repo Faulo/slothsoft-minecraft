@@ -19,7 +19,6 @@ class TAGEnd extends TAGNode
         return null;
     }
 
-    public $Payload = array(
-    );
+    public $Payload = array();
 }
 

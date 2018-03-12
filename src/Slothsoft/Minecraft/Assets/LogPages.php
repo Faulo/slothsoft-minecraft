@@ -14,7 +14,9 @@ use DOMDocument;
  */
 class LogPages extends AssetImplementation
 {
-    protected function loadResult(FarahUrl $url) : ResultInterface {
+
+    protected function loadResult(FarahUrl $url): ResultInterface
+    {
         $firstYear = 2010;
         $firstMonth = 12;
         
