@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 namespace Slothsoft\Minecraft\NBT;
 
 class TAGEnd extends TAGNode
