@@ -67,7 +67,7 @@ Llo
 	</directory>
     <fragment name="home">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <fragment name="content">
         <use-template ref="xsl/home"/>
         <import ref="//slothsoft@core/DOM"/>
@@ -85,7 +85,7 @@ Llo
     </fragment>
     <fragment name="news">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <fragment name="content">
         <use-template ref="xsl/news"/>
         <use-document ref="static/news"/>
@@ -93,12 +93,12 @@ Llo
     </fragment>
     <fragment name="log">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="log-wrapper"/>
     </fragment>
     <fragment name="archive">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="//slothsoft@chat/archive"/>
     </fragment>
     <fragment name="log-wrapper">
@@ -112,12 +112,12 @@ Llo
     </fragment>
     <fragment name="shoutbox">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="//slothsoft@chat/default"/>
     </fragment>
     <fragment name="maps">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="maps-content"/>
     </fragment>
     <fragment name="map-2D-normal">
@@ -138,42 +138,42 @@ Llo
     </fragment>
     <fragment name="infos">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="infos-content"/>
     </fragment>
     <fragment name="statistic">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="statistic-content"/>
     </fragment>
     <fragment name="law">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="law-content"/>
     </fragment>
     <fragment name="mall">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="mall-content"/>
     </fragment>
     <fragment name="workshop">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="workshop-content"/>
     </fragment>
     <fragment name="players">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="players-content"/>
     </fragment>
     <fragment name="pics">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="pics-content"/>
     </fragment>
     <fragment name="mapTest">
       <import ref="default"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="content" ref="static/map-mca"/>
     </fragment>
     <fragment name="status">
@@ -223,11 +223,11 @@ Llo
     </fragment>
     <fragment name="map">
       <use-template ref="xsl/_map"/>
-      <use-stylesheet ref="//slothsoft@slothsoft/css/default"/>
-      <use-stylesheet ref="//slothsoft@slothsoft/css/layout"/>
-      <use-stylesheet ref="//slothsoft@slothsoft/css/fonts"/>
-      <use-stylesheet ref="//slothsoft@slothsoft/css/colors"/>
-      <use-stylesheet ref="css/default"/>
+      <link-stylesheet ref="//slothsoft@slothsoft/css/default"/>
+      <link-stylesheet ref="//slothsoft@slothsoft/css/layout"/>
+      <link-stylesheet ref="//slothsoft@slothsoft/css/fonts"/>
+      <link-stylesheet ref="//slothsoft@slothsoft/css/colors"/>
+      <link-stylesheet ref="css/default"/>
       <use-document as="navi" ref="//slothsoft@slothsoft/navi"/>
       <use-document as="validator" ref="//slothsoft@slothsoft/validator"/>
       <use-document as="dict.select" ref="//slothsoft@slothsoft/dict.select"/>
