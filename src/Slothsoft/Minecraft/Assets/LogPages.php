@@ -4,7 +4,7 @@ namespace Slothsoft\Minecraft\Assets;
 
 use Slothsoft\Farah\Module\FarahUrl\FarahUrl;
 use Slothsoft\Farah\Module\Node\Asset\AssetImplementation;
-use Slothsoft\Farah\Module\Results\DOMDocumentResult;
+use Slothsoft\Farah\Module\Results\ResultCatalog;
 use Slothsoft\Farah\Module\Results\ResultInterface;
 use DOMDocument;
 
@@ -49,7 +49,7 @@ class LogPages extends AssetImplementation
         
         $doc = new DOMDocument();
         $doc->loadXML($xml);
-        return new DOMDocumentResult($url, $doc);
+        return ResultCatalog::createDOMDocumentResult($url, $doc);
     }
 }
 

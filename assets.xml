@@ -1,14 +1,24 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module">
-  	
-    <directory name="data" path="data">
-    	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
-    </directory>
     <resource-directory name="css" path="stylesheet" type="text/css"/>
     <resource-directory name="js" path="script" type="application/javascript"/>
     <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
     <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+     
+     
+    
+    
+    <directory name="data" path="data">
+		<custom-asset name="status" class="Slothsoft\Minecraft\Assets\StatusAsset"/>
+    	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
+    </directory>
+    
+    
+    
+    
+   
     <resource-directory name="pages" path="pages" type="application/xml"/>
+    
     <directory name="static">
 	    <resource name="news" path="news.xml" type="application/xml"/>
 	    <resource name="tectonicus" path="tectonicus/index.html" type="text/html"/>

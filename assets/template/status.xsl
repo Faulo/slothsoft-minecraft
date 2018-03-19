@@ -2,8 +2,9 @@
 <xsl:stylesheet version="1.0"
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-
-	<xsl:template match="*[@data-cms-name='status']/status">
+	
+	
+	<xsl:template match="status">
 		<xsl:variable name="playerList" select="player[@online]"/>
 		<xsl:variable name="system" select="system"/>
 		<xsl:variable name="online">
