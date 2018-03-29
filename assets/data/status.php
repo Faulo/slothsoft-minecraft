@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Farah;
 
-use Slothsoft\DBMS\Manager;
+use Slothsoft\Core\DBMS\Manager;
 use Slothsoft\Minecraft\Log;
 use DOMDocument;
 $dbName = 'cms';

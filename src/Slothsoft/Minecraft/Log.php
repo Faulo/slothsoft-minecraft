@@ -3,7 +3,7 @@ declare(strict_types = 1);
 namespace Slothsoft\Minecraft;
 
 use Slothsoft\Core\Calendar\DateTimeFormatter;
-use Slothsoft\DBMS\Manager;
+use Slothsoft\Core\DBMS\Manager;
 use Exception;
 
 /*
