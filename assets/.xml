@@ -5,7 +5,9 @@
     <resource-directory name="xsl" type="application/xslt+xml"/>
     
     <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
-     <fragment name="data" path="data">
+     <fragment name="data">
+     	<fragment name="log"/>
+     	<fragment name="pics-upload"/>
 		<custom-asset name="status" class="Slothsoft\Minecraft\Assets\StatusAsset"/>
     	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
     </fragment>
