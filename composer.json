@@ -30,10 +30,13 @@
 	},
 	"autoload" : {
 		"files" : [
-			"C:\\Webserver\\workspace\\slothsoft-minecraft\\src\\registerModule.php"
+			"src/registerModule.php"
 		],
 		"psr-0" : {
 			"Slothsoft\\Minecraft\\" : "src/"
 		}
-	}
+	},
+	"keywords" : [
+		"farah-app"
+	]
 }
