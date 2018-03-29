@@ -1,17 +1,18 @@
 <?xml version="1.0"?>
 <assets xmlns="http://schema.slothsoft.net/farah/module">
-    <resource-directory name="css" path="stylesheet" type="text/css"/>
-    <resource-directory name="js" path="script" type="application/javascript"/>
-    <resource-directory name="xsl" path="template" type="application/xslt+xml"/>
+    <resource-directory name="css" type="text/css"/>
+    <resource-directory name="js" type="application/javascript"/>
+    <resource-directory name="xsl" type="application/xslt+xml"/>
+    
     <resource-directory name="dictionary" path="dictionary" type="application/xml"/>
-     
-     
-    
-    
-    <directory name="data" path="data">
+     <fragment name="data" path="data">
 		<custom-asset name="status" class="Slothsoft\Minecraft\Assets\StatusAsset"/>
     	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
-    </directory>
+    </fragment>
+     
+    
+    
+    
     
     <directory name="static">
 	    <resource name="news" path="news.xml" type="application/xml"/>
@@ -58,7 +59,7 @@
       <link-stylesheet ref="css/default"/>
       <fragment name="content">
         <use-template ref="xsl/home"/>
-        <import ref="//slothsoft@core/DOM"/>
+        <import ref="//slothsoft@core/imports/DOM"/>
         <use-document ref="//farah/sites"/>
         <use-document ref="static/news"/>
         <use-document as="log" ref="log-wrapper"/>
@@ -166,7 +167,7 @@
     </fragment>
     <fragment name="status">
       <use-template ref="xsl/status"/>
-      <import ref="//slothsoft@core/DOM"/>
+      <import ref="//slothsoft@core/imports/DOM"/>
       <use-document ref="data/status"/>
     </fragment>
     <fragment name="maps-content">
