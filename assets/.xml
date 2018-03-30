@@ -61,7 +61,7 @@
       <link-stylesheet ref="css/default"/>
       <fragment name="content">
         <use-template ref="xsl/home"/>
-        <import ref="//slothsoft@core/imports/DOM"/>
+        <import ref="//slothsoft@core/api/DOM"/>
         <use-document ref="//farah/sites"/>
         <use-document ref="static/news"/>
         <use-document as="log" ref="log-wrapper"/>
@@ -169,7 +169,7 @@
     </fragment>
     <fragment name="status">
       <use-template ref="xsl/status"/>
-      <import ref="//slothsoft@core/imports/DOM"/>
+      <import ref="//slothsoft@core/api/DOM"/>
       <use-document ref="data/status"/>
     </fragment>
     <fragment name="maps-content">
