@@ -27,7 +27,7 @@ class LogPages extends AssetImplementation
         
         // my_dump([$firstYear, $lastYear, $firstMonth, $lastMonth]);die();
         
-        $xml = '<pages xmlns="http://schema.slothsoft.net/farah/sites" xmlns:sfm="http://schema.slothsoft.net/farah/module">';
+        $xml = '<sitemap version="1.0" xmlns="http://schema.slothsoft.net/farah/sitemap" xmlns:sfm="http://schema.slothsoft.net/farah/module">';
         
         for ($year = $lastYear; $year >= $firstYear; $year --) {
             // <page status-active="" status-public="" redirect="/Minecraft/Log/" name="2014" title="2014">
@@ -45,7 +45,7 @@ class LogPages extends AssetImplementation
             $xml .= '</page>';
         }
         
-        $xml .= '</pages>';
+        $xml .= '</sitemap>';
         
         $doc = new DOMDocument();
         $doc->loadXML($xml);
