@@ -227,4 +227,22 @@
       <import ref="//slothsoft/default"/>
       <use-document ref="status"/>
     </fragment>
+    
+    <fragment name="api">
+    	<fragment name="default">
+      		<use-document ref="status"/>
+		    <link-stylesheet ref="css/default"/>
+		</fragment>
+    </fragment>
+    
+    <fragment name="html">
+    	<fragment name="home">
+	        <import ref="api/default"/>
+	        <use-template ref="xsl/home"/>
+	        <import ref="//slothsoft@core/api/DOM"/>
+	        <use-document ref="//farah/sites"/>
+	        <use-document ref="static/news"/>
+	        <use-document as="log" ref="log-wrapper"/>
+		</fragment>
+    </fragment>
   </assets>
