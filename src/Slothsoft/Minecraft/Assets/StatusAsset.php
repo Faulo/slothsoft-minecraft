@@ -2,11 +2,10 @@
 declare(strict_types = 1);
 namespace Slothsoft\Minecraft\Assets;
 
-use Slothsoft\Farah\Module\FarahUrl\FarahUrl;
+use Slothsoft\Farah\Module\Executables\ExecutableInterface;
+use Slothsoft\Farah\Module\FarahUrl\FarahUrlArguments;
 use Slothsoft\Farah\Module\Node\Asset\AssetBase;
-use Slothsoft\Farah\Module\Results\ResultCatalog;
-use Slothsoft\Farah\Module\Results\ResultInterface;
-use DOMDocument;
+use Slothsoft\Minecraft\Executables\MinecraftExecutableCreator;
 
 /**
  *
@@ -16,12 +15,10 @@ use DOMDocument;
 class StatusAsset extends AssetBase
 {
 
-    protected function loadResult(FarahUrl $url): ResultInterface
+    protected function loadExecutable(FarahUrlArguments $args): ExecutableInterface
     {
-        $dataDoc = new DOMDocument();
-        $dataRoot = $dataDoc->createElement('status');
-        $dataDoc->appendChild($dataRoot);
-        return ResultCatalog::createDOMDocumentResult($url, $dataDoc);
+        $creator = new MinecraftExecutableCreator($this, $args);
+        return $creator->createNullExecutable();
     }
 }
 
