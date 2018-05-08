@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 namespace Slothsoft\Minecraft\Executables;
 
 use Slothsoft\Farah\Module\Executables\ExecutableDOMWriterBase;
