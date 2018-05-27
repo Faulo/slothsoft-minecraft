@@ -8,8 +8,8 @@
      <fragment name="data">
      	<fragment name="log"/>
      	<fragment name="pics-upload"/>
-		<custom-asset name="status" class="Slothsoft\Minecraft\Assets\StatusAsset"/>
-    	<custom-asset name="sites.log" class="Slothsoft\Minecraft\Assets\LogPages"/>
+		<custom-asset name="status" executable-builder="Slothsoft\Minecraft\Asset\StatusBuilder"/>
+    	<custom-asset name="sites.log" executable-builder="Slothsoft\Minecraft\Asset\LogPagesBuilder"/>
     </fragment>
      
     
@@ -57,14 +57,14 @@
 	    <resource name="waypoints" path="waypoints.json" type="application/json"/>
 	</directory>
     <fragment name="home">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
       <fragment name="content">
-        <use-template ref="xsl/home"/>
+        <use-template ref="/xsl/home"/>
         <import ref="//slothsoft@core/api/DOM"/>
         <use-document ref="//farah/sites"/>
-        <use-document ref="static/news"/>
-        <use-document as="log" ref="log-wrapper"/>
+        <use-document ref="/static/news"/>
+        <use-document as="log" ref="/log-wrapper"/>
         <use-document as="chat-short" ref="//slothsoft@chat/default"/>
       </fragment>
     </fragment>
@@ -75,174 +75,174 @@
       <use-document as="chat" ref="//slothsoft@chat/default"/>
     </fragment>
     <fragment name="news">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
       <fragment name="content">
-        <use-template ref="xsl/news"/>
-        <use-document ref="static/news"/>
+        <use-template ref="/xsl/news"/>
+        <use-document ref="/static/news"/>
       </fragment>
     </fragment>
     <fragment name="log">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="log-wrapper"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/log-wrapper"/>
     </fragment>
     <fragment name="archive">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
       <use-document as="content" ref="//slothsoft@chat/archive"/>
     </fragment>
     <fragment name="log-wrapper">
-      <use-template ref="xsl/log"/>
-      <use-document ref="log-content"/>
+      <use-template ref="/xsl/log"/>
+      <use-document ref="/log-content"/>
     </fragment>
     <fragment name="log-content">
-      <use-template ref="xsl/log.content"/>
-      <use-document ref="data/log"/>
-      <use-document ref="data/status"/>
+      <use-template ref="/xsl/log.content"/>
+      <use-document ref="/data/log"/>
+      <use-document ref="/data/status"/>
     </fragment>
     <fragment name="shoutbox">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
       <use-document as="content" ref="//slothsoft@chat/default"/>
     </fragment>
     <fragment name="maps">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="maps-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/maps-content"/>
     </fragment>
     <fragment name="map-2D-normal">
-      <import ref="map"/>
-      <use-document as="map" ref="static/map-2D-n"/>
+      <import ref="/map"/>
+      <use-document as="map" ref="/static/map-2D-n"/>
     </fragment>
     <fragment name="map-3D-normal">
-      <import ref="map"/>
-      <use-document as="map" ref="static/map-3D-n"/>
+      <import ref="/map"/>
+      <use-document as="map" ref="/static/map-3D-n"/>
     </fragment>
     <fragment name="map-2D-cave">
-      <import ref="map"/>
-      <use-document as="map" ref="static/map-2D-c"/>
+      <import ref="/map"/>
+      <use-document as="map" ref="/static/map-2D-c"/>
     </fragment>
     <fragment name="map-3D-cave">
-      <import ref="map"/>
-      <use-document as="map" ref="static/map-3D-c"/>
+      <import ref="/map"/>
+      <use-document as="map" ref="/static/map-3D-c"/>
     </fragment>
     <fragment name="infos">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="infos-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/infos-content"/>
     </fragment>
     <fragment name="statistic">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="statistic-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/statistic-content"/>
     </fragment>
     <fragment name="law">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="law-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/law-content"/>
     </fragment>
     <fragment name="mall">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="mall-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/mall-content"/>
     </fragment>
     <fragment name="workshop">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="workshop-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/workshop-content"/>
     </fragment>
     <fragment name="players">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="players-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/players-content"/>
     </fragment>
     <fragment name="pics">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="pics-content"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/pics-content"/>
     </fragment>
     <fragment name="mapTest">
-      <import ref="default"/>
-      <link-stylesheet ref="css/default"/>
-      <use-document as="content" ref="static/map-mca"/>
+      <import ref="/default"/>
+      <link-stylesheet ref="/css/default"/>
+      <use-document as="content" ref="/static/map-mca"/>
     </fragment>
     <fragment name="status">
-      <use-template ref="xsl/status"/>
+      <use-template ref="/xsl/status"/>
       <import ref="//slothsoft@core/api/DOM"/>
-      <use-document ref="data/status"/>
+      <use-document ref="/data/status"/>
     </fragment>
     <fragment name="maps-content">
-      <use-template ref="xsl/maps"/>
-      <use-document ref="static/maps"/>
+      <use-template ref="/xsl/maps"/>
+      <use-document ref="/static/maps"/>
     </fragment>
     <fragment name="infos-content">
-      <use-template ref="xsl/infos"/>
-      <use-document ref="static/hardware"/>
-      <use-document ref="static/server"/>
+      <use-template ref="/xsl/infos"/>
+      <use-document ref="/static/hardware"/>
+      <use-document ref="/static/server"/>
     </fragment>
     <fragment name="statistic-content">
-      <use-template ref="xsl/infos"/>
-      <use-document ref="static/info"/>
-      <use-document ref="static/mapping"/>
+      <use-template ref="/xsl/infos"/>
+      <use-document ref="/static/info"/>
+      <use-document ref="/static/mapping"/>
     </fragment>
     <fragment name="law-content">
-      <use-template ref="xsl/law"/>
+      <use-template ref="/xsl/law"/>
     </fragment>
     <fragment name="mall-content">
-      <use-template ref="xsl/mall"/>
-      <use-document ref="static/trade"/>
+      <use-template ref="/xsl/mall"/>
+      <use-document ref="/static/trade"/>
     </fragment>
     <fragment name="workshop-content">
-      <use-template ref="xsl/workshop"/>
-      <use-document ref="static/craft"/>
+      <use-template ref="/xsl/workshop"/>
+      <use-document ref="/static/craft"/>
     </fragment>
     <fragment name="players-content">
-      <use-template ref="xsl/players"/>
-      <use-document ref="static/players"/>
-      <use-document ref="static/heart.0"/>
-      <use-document ref="static/heart.1"/>
-      <use-document ref="static/heart.2"/>
-      <use-document ref="static/food.0"/>
-      <use-document ref="static/food.1"/>
-      <use-document ref="static/food.2"/>
+      <use-template ref="/xsl/players"/>
+      <use-document ref="/static/players"/>
+      <use-document ref="/static/heart.0"/>
+      <use-document ref="/static/heart.1"/>
+      <use-document ref="/static/heart.2"/>
+      <use-document ref="/static/food.0"/>
+      <use-document ref="/static/food.1"/>
+      <use-document ref="/static/food.2"/>
     </fragment>
     <fragment name="pics-content">
-      <use-template ref="xsl/pics"/>
-      <use-document ref="data/pics-upload"/>
-      <use-document ref="static/pics"/>
+      <use-template ref="/xsl/pics"/>
+      <use-document ref="/data/pics-upload"/>
+      <use-document ref="/static/pics"/>
     </fragment>
     <fragment name="map">
-      <use-template ref="xsl/_map"/>
+      <use-template ref="/xsl/_map"/>
       <link-stylesheet ref="//slothsoft@slothsoft/css/default"/>
       <link-stylesheet ref="//slothsoft@slothsoft/css/layout"/>
       <link-stylesheet ref="//slothsoft@slothsoft/css/fonts"/>
       <link-stylesheet ref="//slothsoft@slothsoft/css/colors"/>
-      <link-stylesheet ref="css/default"/>
+      <link-stylesheet ref="/css/default"/>
       <use-document as="navi" ref="//slothsoft@slothsoft/navi"/>
       <use-document as="validator" ref="//slothsoft@slothsoft/validator"/>
       <use-document as="dict.select" ref="//slothsoft@slothsoft/dict.select"/>
     </fragment>
     <fragment name="default">
       <import ref="//slothsoft/default"/>
-      <use-document ref="status"/>
+      <use-document ref="/status"/>
     </fragment>
     
     <fragment name="api">
     	<fragment name="default">
-      		<use-document ref="status"/>
-		    <link-stylesheet ref="css/default"/>
+      		<use-document ref="/status"/>
+		    <link-stylesheet ref="/css/default"/>
 		</fragment>
     </fragment>
     
     <fragment name="html">
     	<fragment name="home">
-	        <import ref="api/default"/>
-	        <use-template ref="xsl/home"/>
+	        <import ref="/api/default"/>
+	        <use-template ref="/xsl/home"/>
 	        <import ref="//slothsoft@core/api/DOM"/>
 	        <use-document ref="//farah/sites"/>
-	        <use-document ref="static/news"/>
-	        <use-document as="log" ref="log-wrapper"/>
+	        <use-document ref="/static/news"/>
+	        <use-document as="log" ref="/log-wrapper"/>
 		</fragment>
     </fragment>
   </assets>

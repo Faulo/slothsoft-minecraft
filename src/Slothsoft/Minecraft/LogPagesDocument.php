@@ -1,12 +1,12 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Minecraft\Executables;
+namespace Slothsoft\Minecraft;
 
-use Slothsoft\Farah\Module\Executables\ExecutableDOMWriterBase;
+use Slothsoft\Core\IO\Writable\DOMWriterInterface;
 use DOMDocument;
 use DOMElement;
 
-class LogPagesExecutable extends ExecutableDOMWriterBase
+class LogPagesDocument implements DOMWriterInterface
 {
     private $startYear;
     private $startMonth;
