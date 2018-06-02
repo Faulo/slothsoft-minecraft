@@ -3,13 +3,13 @@
 	xmlns="http://www.w3.org/2000/svg"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
-	<xsl:template match="*[*[@data-cms-name='log']]">
-		<xsl:apply-templates select="*[@data-cms-name='log']">
-			<xsl:with-param name="status" select="*[@data-cms-name='status']"/>
+	<xsl:template match="/*">
+		<xsl:apply-templates select="*[@name='log']">
+			<xsl:with-param name="status" select="*[@name='status']"/>
 		</xsl:apply-templates>
 	</xsl:template>
 	
-	<xsl:template match="*[@data-cms-name='log']/log">
+	<xsl:template match="*[@name='log']/log">
 		<xsl:param name="status" select="/.."/>
 		<xsl:variable name="scaleX" select="1 div 60"/>
 		<xsl:variable name="scaleY" select="20"/>
@@ -22,6 +22,7 @@
 		
 		<xsl:variable name="past" select="number(online[1]/@date-stamp)"/>
 		<xsl:variable name="time" select="number(online[last()]/@date-stamp)"/>
+		
 		<svg
 			contentScriptType="application/javascript"
 			contentStyleType="text/css"
@@ -74,7 +75,7 @@
 		</svg>
 	</xsl:template>
 	
-	<xsl:template match="*[@data-cms-name='status']/status">
+	<xsl:template match="*[@name='status']/status">
 		<g class="status" transform="translate(24, 24)">
 			<xsl:for-each select="system">
 				<g transform="translate(0, 0)">

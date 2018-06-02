@@ -3,7 +3,7 @@
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
  
-	<xsl:template match="/data">
+	<xsl:template match="/*">
 		<article class="minecraft-log paintedBox">
 			<script type="application/javascript"><![CDATA[
 var MinecraftLog = {
@@ -57,7 +57,7 @@ addEventListener(
 );
 		]]></script>
 			<h2>Online Players Log</h2>
-			<xsl:copy-of select="*[@data-cms-name='log-content']/*"/>
+			<xsl:copy-of select="*[@name='log-content']/*"/>
 		</article>
 	</xsl:template>
 </xsl:stylesheet>

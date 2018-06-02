@@ -1,15 +1,13 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Minecraft\Asset;
+namespace Slothsoft\Minecraft\Assets;
 
 use Slothsoft\Farah\FarahUrl\FarahUrlArguments;
 use Slothsoft\Farah\Module\Asset\AssetInterface;
 use Slothsoft\Farah\Module\Asset\ExecutableBuilderStrategy\ExecutableBuilderStrategyInterface;
-use Slothsoft\Farah\Module\Executable\ExecutableInterface;
 use Slothsoft\Farah\Module\Executable\ExecutableStrategies;
 use Slothsoft\Farah\Module\Executable\ResultBuilderStrategy\DOMWriterResultBuilder;
 use Slothsoft\Minecraft\LogPagesDocument;
-use Slothsoft\Minecraft\Executables\MinecraftExecutableCreator;
 
 /**
  *
@@ -18,15 +16,6 @@ use Slothsoft\Minecraft\Executables\MinecraftExecutableCreator;
  */
 class LogPagesBuilder implements ExecutableBuilderStrategyInterface
 {
-
-    protected function loadExecutable(FarahUrlArguments $args): ExecutableInterface
-    {
-        
-        
-        $creator = new MinecraftExecutableCreator($this, $args);
-        return $creator->createLogPagesExecutable($firstYear, $firstMonth, $lastYear, $lastMonth);
-    }
-    
     public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
     {
         $startYear = 2010;
