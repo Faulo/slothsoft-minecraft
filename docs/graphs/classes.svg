@@ -21,142 +21,16 @@
 <path fill="none" stroke="gray" d="M36,-114C36,-114 1091.54,-114 1091.54,-114 1097.54,-114 1103.54,-120 1103.54,-126 1103.54,-126 1103.54,-714 1103.54,-714 1103.54,-720 1097.54,-726 1091.54,-726 1091.54,-726 36,-726 36,-726 30,-726 24,-720 24,-714 24,-714 24,-126 24,-126 24,-120 30,-114 36,-114"/>
 <text text-anchor="middle" x="563.769" y="-713.2" font-family="Times New Roman,serif" font-size="11.00" fill="gray">Minecraft</text>
 </g>
-<g id="clust4" class="cluster"><title>cluster_\Slothsoft\Minecraft\NBT</title>
-<path fill="none" stroke="gray" d="M44,-356C44,-356 1063.04,-356 1063.04,-356 1069.04,-356 1075.04,-362 1075.04,-368 1075.04,-368 1075.04,-686 1075.04,-686 1075.04,-692 1069.04,-698 1063.04,-698 1063.04,-698 44,-698 44,-698 38,-698 32,-692 32,-686 32,-686 32,-368 32,-368 32,-362 38,-356 44,-356"/>
-<text text-anchor="middle" x="553.519" y="-685.2" font-family="Times New Roman,serif" font-size="11.00" fill="gray">NBT</text>
-</g>
-<g id="clust5" class="cluster"><title>cluster_\Slothsoft\Minecraft\Assets</title>
+<g id="clust4" class="cluster"><title>cluster_\Slothsoft\Minecraft\Assets</title>
 <path fill="none" stroke="gray" d="M973.538,-168C973.538,-168 1083.54,-168 1083.54,-168 1089.54,-168 1095.54,-174 1095.54,-180 1095.54,-180 1095.54,-336 1095.54,-336 1095.54,-342 1089.54,-348 1083.54,-348 1083.54,-348 973.538,-348 973.538,-348 967.538,-348 961.538,-342 961.538,-336 961.538,-336 961.538,-180 961.538,-180 961.538,-174 967.538,-168 973.538,-168"/>
 <text text-anchor="middle" x="1028.54" y="-335.2" font-family="Times New Roman,serif" font-size="11.00" fill="gray">Assets</text>
 </g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGFloat -->
-<g id="node1" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGFloat</title>
-<polygon fill="none" stroke="black" points="1064.04,-670 993.038,-670 993.038,-634 1064.04,-634 1064.04,-670"/>
-<text text-anchor="middle" x="1028.54" y="-649.2" font-family="Courier,monospace" font-size="11.00">TAGFloat</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="node11" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<polygon fill="none" stroke="black" points="583.519,-400 506.519,-400 506.519,-364 583.519,-364 583.519,-400"/>
-<text text-anchor="middle" x="545.019" y="-379.2" font-family="Courier,monospace" font-size="11.00">TAGNumber</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGFloat&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge1" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGFloat&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M992.867,-644.178C981.575,-640.112 969.827,-634.029 961.538,-625 893.52,-550.908 972.707,-471.668 894.038,-409 807.231,-339.849 666.52,-355.818 593.453,-370.511"/>
-<polygon fill="none" stroke="black" points="592.678,-367.097 583.605,-372.567 594.109,-373.949 592.678,-367.097"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGShort -->
-<g id="node2" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGShort</title>
-<polygon fill="none" stroke="black" points="1064.04,-616 993.038,-616 993.038,-580 1064.04,-580 1064.04,-616"/>
-<text text-anchor="middle" x="1028.54" y="-595.2" font-family="Courier,monospace" font-size="11.00">TAGShort</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGShort&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge2" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGShort&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M992.984,-589.613C981.834,-585.512 970.145,-579.551 961.538,-571 906.206,-516.024 957.215,-454.746 894.038,-409 804.564,-344.212 666.059,-357.999 593.712,-371.311"/>
-<polygon fill="none" stroke="black" points="592.694,-367.943 583.532,-373.262 594.012,-374.817 592.694,-367.943"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="node3" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<polygon fill="none" stroke="black" points="124,-535 40,-535 40,-499 124,-499 124,-535"/>
-<text text-anchor="start" x="48" y="-520.2" font-family="Courier,monospace" font-size="11.00">«abstract»</text>
-<text text-anchor="start" x="58" y="-508.2" font-family="Courier,monospace" font-size="11.00">TAGNode</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGLong -->
-<g id="node4" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGLong</title>
-<polygon fill="none" stroke="black" points="1060.54,-562 996.538,-562 996.538,-526 1060.54,-526 1060.54,-562"/>
-<text text-anchor="middle" x="1028.54" y="-541.2" font-family="Courier,monospace" font-size="11.00">TAGLong</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGLong&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge3" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGLong&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M996.449,-535.764C984.613,-531.539 971.573,-525.457 961.538,-517 918.254,-480.524 942.447,-438.335 894.038,-409 800.057,-352.049 664.604,-362.231 593.583,-373.016"/>
-<polygon fill="none" stroke="black" points="592.912,-369.579 583.585,-374.604 594.01,-376.492 592.912,-369.579"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGString -->
-<g id="node5" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGString</title>
-<polygon fill="none" stroke="black" points="583.519,-670 506.519,-670 506.519,-634 583.519,-634 583.519,-670"/>
-<text text-anchor="middle" x="545.019" y="-649.2" font-family="Courier,monospace" font-size="11.00">TAGString</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGString&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge4" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGString&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M506.472,-657.019C440.431,-664.169 300.578,-671.714 196,-625 156.153,-607.2 121.775,-569.143 101.721,-543.305"/>
-<polygon fill="none" stroke="black" points="104.306,-540.921 95.4819,-535.057 98.7238,-545.144 104.306,-540.921"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGList -->
-<g id="node6" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGList</title>
-<polygon fill="none" stroke="black" points="577.019,-616 513.019,-616 513.019,-580 577.019,-580 577.019,-616"/>
-<text text-anchor="middle" x="545.019" y="-595.2" font-family="Courier,monospace" font-size="11.00">TAGList</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGList&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge5" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGList&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M512.651,-599.367C450.869,-601.234 309.567,-601.407 196,-571 170.203,-564.093 143.148,-551.383 121.981,-540.029"/>
-<polygon fill="none" stroke="black" points="123.445,-536.84 112.994,-535.101 120.079,-542.978 123.445,-536.84"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByteArray -->
-<g id="node7" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByteArray</title>
-<polygon fill="none" stroke="black" points="594.019,-562 496.019,-562 496.019,-526 594.019,-526 594.019,-562"/>
-<text text-anchor="middle" x="545.019" y="-541.2" font-family="Courier,monospace" font-size="11.00">TAGByteArray</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByteArray&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge8" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByteArray&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M495.987,-541.187C408.582,-536.068 224.288,-525.275 134.435,-520.012"/>
-<polygon fill="none" stroke="black" points="134.406,-516.505 124.218,-519.414 133.996,-523.493 134.406,-516.505"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGDouble -->
-<g id="node8" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGDouble</title>
-<polygon fill="none" stroke="black" points="1067.04,-508 990.038,-508 990.038,-472 1067.04,-472 1067.04,-508"/>
-<text text-anchor="middle" x="1028.54" y="-487.2" font-family="Courier,monospace" font-size="11.00">TAGDouble</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGDouble&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge9" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGDouble&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M989.988,-476.81C980.448,-472.877 970.396,-468.208 961.538,-463 928.42,-443.527 929.772,-423.11 894.038,-409 792.976,-369.093 662.765,-371.841 593.808,-377.071"/>
-<polygon fill="none" stroke="black" points="593.37,-373.595 583.685,-377.891 593.935,-380.572 593.37,-373.595"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByte -->
-<g id="node9" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByte</title>
-<polygon fill="none" stroke="black" points="1060.54,-454 996.538,-454 996.538,-418 1060.54,-418 1060.54,-454"/>
-<text text-anchor="middle" x="1028.54" y="-433.2" font-family="Courier,monospace" font-size="11.00">TAGByte</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByte&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge11" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByte&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M996.433,-428.587C969.494,-422.437 929.402,-413.929 894.038,-409 787.355,-394.13 661.048,-386.893 593.794,-383.858"/>
-<polygon fill="none" stroke="black" points="593.664,-380.349 583.52,-383.407 593.356,-387.342 593.664,-380.349"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGEnd -->
-<g id="node10" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGEnd</title>
-<polygon fill="none" stroke="black" points="573.519,-508 516.519,-508 516.519,-472 573.519,-472 573.519,-508"/>
-<text text-anchor="middle" x="545.019" y="-487.2" font-family="Courier,monospace" font-size="11.00">TAGEnd</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGEnd&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge13" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGEnd&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M516.218,-491.628C440.899,-496.039 232.03,-508.272 134.459,-513.986"/>
-<polygon fill="none" stroke="black" points="134.027,-510.505 124.249,-514.584 134.437,-517.493 134.027,-510.505"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNumber&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge14" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNumber&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M506.472,-376.981C440.431,-369.831 300.578,-362.286 196,-409 156.153,-426.8 121.775,-464.857 101.721,-490.695"/>
-<polygon fill="none" stroke="black" points="98.7238,-488.856 95.4819,-498.943 104.306,-493.079 98.7238,-488.856"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGCompound -->
-<g id="node12" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGCompound</title>
-<polygon fill="none" stroke="black" points="590.519,-454 499.519,-454 499.519,-418 590.519,-418 590.519,-454"/>
-<text text-anchor="middle" x="545.019" y="-433.2" font-family="Courier,monospace" font-size="11.00">TAGCompound</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGCompound&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
-<g id="edge15" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGCompound&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
-<path fill="none" stroke="black" d="M499.47,-434.295C432.416,-432.875 302.103,-434.591 196,-463 170.203,-469.907 143.148,-482.617 121.981,-493.971"/>
-<polygon fill="none" stroke="black" points="120.079,-491.022 112.994,-498.899 123.445,-497.16 120.079,-491.022"/>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGInt -->
-<g id="node13" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGInt</title>
-<polygon fill="none" stroke="black" points="1057.04,-400 1000.04,-400 1000.04,-364 1057.04,-364 1057.04,-400"/>
-<text text-anchor="middle" x="1028.54" y="-379.2" font-family="Courier,monospace" font-size="11.00">TAGInt</text>
-</g>
-<!-- \\Slothsoft\\Minecraft\\NBT\\TAGInt&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
-<g id="edge16" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGInt&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
-<path fill="none" stroke="black" d="M999.92,-382C920.98,-382 693.664,-382 593.912,-382"/>
-<polygon fill="none" stroke="black" points="593.813,-378.5 583.813,-382 593.813,-385.5 593.813,-378.5"/>
+<g id="clust5" class="cluster"><title>cluster_\Slothsoft\Minecraft\NBT</title>
+<path fill="none" stroke="gray" d="M44,-356C44,-356 1063.04,-356 1063.04,-356 1069.04,-356 1075.04,-362 1075.04,-368 1075.04,-368 1075.04,-686 1075.04,-686 1075.04,-692 1069.04,-698 1063.04,-698 1063.04,-698 44,-698 44,-698 38,-698 32,-692 32,-686 32,-686 32,-368 32,-368 32,-362 38,-356 44,-356"/>
+<text text-anchor="middle" x="553.519" y="-685.2" font-family="Times New Roman,serif" font-size="11.00" fill="gray">NBT</text>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\LogBuilder -->
-<g id="node14" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\LogBuilder</title>
+<g id="node1" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\LogBuilder</title>
 <polygon fill="none" stroke="black" points="1070.54,-320 986.538,-320 986.538,-284 1070.54,-284 1070.54,-320"/>
 <text text-anchor="middle" x="1028.54" y="-299.2" font-family="Courier,monospace" font-size="11.00">LogBuilder</text>
 </g>
@@ -166,29 +40,155 @@
 <text text-anchor="middle" x="545.019" y="-68.3" font-family="Times New Roman,serif" font-size="14.00" fill="gray">\Slothsoft\Farah\Module\Asset\ExecutableBuilderStrategy\ExecutableBuilderStrategyInterface</text>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\LogBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface -->
-<g id="edge6" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\LogBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
+<g id="edge1" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\LogBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M986.519,-285.711C978.208,-282.273 969.559,-278.595 961.538,-275 824.357,-213.511 665.56,-133.372 590.154,-94.759"/>
 <polygon fill="none" stroke="black" points="591.44,-91.4851 580.945,-90.0371 588.246,-97.7141 591.44,-91.4851"/>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder -->
-<g id="node15" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder</title>
+<g id="node2" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder</title>
 <polygon fill="none" stroke="black" points="1087.54,-266 969.538,-266 969.538,-230 1087.54,-230 1087.54,-266"/>
 <text text-anchor="middle" x="1028.54" y="-245.2" font-family="Courier,monospace" font-size="11.00">LogPagesBuilder</text>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface -->
-<g id="edge7" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
+<g id="edge2" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\LogPagesBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M978.27,-229.992C888.82,-197.297 700.129,-128.329 604.386,-93.3339"/>
 <polygon fill="none" stroke="black" points="605.453,-89.9971 594.859,-89.8514 603.049,-96.5717 605.453,-89.9971"/>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\StatusBuilder -->
-<g id="node16" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\StatusBuilder</title>
+<g id="node3" class="node"><title>\\Slothsoft\\Minecraft\\Assets\\StatusBuilder</title>
 <polygon fill="none" stroke="black" points="1080.54,-212 976.538,-212 976.538,-176 1080.54,-176 1080.54,-212"/>
 <text text-anchor="middle" x="1028.54" y="-191.2" font-family="Courier,monospace" font-size="11.00">StatusBuilder</text>
 </g>
 <!-- \\Slothsoft\\Minecraft\\Assets\\StatusBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface -->
-<g id="edge10" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\StatusBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
+<g id="edge3" class="edge"><title>\\Slothsoft\\Minecraft\\Assets\\StatusBuilder&#45;&gt;\\Slothsoft\\Farah\\Module\\Asset\\ExecutableBuilderStrategy\\ExecutableBuilderStrategyInterface</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M976.463,-181.059C892.605,-159.813 725.136,-117.382 625.612,-92.1661"/>
 <polygon fill="none" stroke="black" points="626.455,-88.769 615.901,-89.7057 624.735,-95.5546 626.455,-88.769"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByte -->
+<g id="node4" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByte</title>
+<polygon fill="none" stroke="black" points="1060.54,-670 996.538,-670 996.538,-634 1060.54,-634 1060.54,-670"/>
+<text text-anchor="middle" x="1028.54" y="-649.2" font-family="Courier,monospace" font-size="11.00">TAGByte</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="node14" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<polygon fill="none" stroke="black" points="583.519,-454 506.519,-454 506.519,-418 583.519,-418 583.519,-454"/>
+<text text-anchor="middle" x="545.019" y="-433.2" font-family="Courier,monospace" font-size="11.00">TAGNumber</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByte&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge5" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByte&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M996.377,-644.811C984.252,-640.702 971.023,-634.424 961.538,-625 906.206,-570.024 957.215,-508.746 894.038,-463 804.564,-398.212 666.059,-411.999 593.712,-425.311"/>
+<polygon fill="none" stroke="black" points="592.694,-421.943 583.532,-427.262 594.012,-428.817 592.694,-421.943"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByteArray -->
+<g id="node5" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByteArray</title>
+<polygon fill="none" stroke="black" points="594.019,-670 496.019,-670 496.019,-634 594.019,-634 594.019,-670"/>
+<text text-anchor="middle" x="545.019" y="-649.2" font-family="Courier,monospace" font-size="11.00">TAGByteArray</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="node13" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<polygon fill="none" stroke="black" points="124,-535 40,-535 40,-499 124,-499 124,-535"/>
+<text text-anchor="start" x="48" y="-520.2" font-family="Courier,monospace" font-size="11.00">«abstract»</text>
+<text text-anchor="start" x="58" y="-508.2" font-family="Courier,monospace" font-size="11.00">TAGNode</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGByteArray&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge6" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGByteArray&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M495.968,-658.093C426.461,-664.79 295.321,-669.366 196,-625 156.153,-607.2 121.775,-569.143 101.721,-543.305"/>
+<polygon fill="none" stroke="black" points="104.306,-540.921 95.4819,-535.057 98.7238,-545.144 104.306,-540.921"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGCompound -->
+<g id="node6" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGCompound</title>
+<polygon fill="none" stroke="black" points="590.519,-616 499.519,-616 499.519,-580 590.519,-580 590.519,-616"/>
+<text text-anchor="middle" x="545.019" y="-595.2" font-family="Courier,monospace" font-size="11.00">TAGCompound</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGCompound&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge7" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGCompound&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M499.47,-599.705C432.416,-601.125 302.103,-599.409 196,-571 170.203,-564.093 143.148,-551.383 121.981,-540.029"/>
+<polygon fill="none" stroke="black" points="123.445,-536.84 112.994,-535.101 120.079,-542.978 123.445,-536.84"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGDouble -->
+<g id="node7" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGDouble</title>
+<polygon fill="none" stroke="black" points="1067.04,-616 990.038,-616 990.038,-580 1067.04,-580 1067.04,-616"/>
+<text text-anchor="middle" x="1028.54" y="-595.2" font-family="Courier,monospace" font-size="11.00">TAGDouble</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGDouble&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge8" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGDouble&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M989.993,-587.31C980.035,-583.282 969.774,-577.941 961.538,-571 918.254,-534.524 942.447,-492.335 894.038,-463 800.057,-406.049 664.604,-416.231 593.583,-427.016"/>
+<polygon fill="none" stroke="black" points="592.912,-423.579 583.585,-428.604 594.01,-430.492 592.912,-423.579"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGEnd -->
+<g id="node8" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGEnd</title>
+<polygon fill="none" stroke="black" points="573.519,-562 516.519,-562 516.519,-526 573.519,-526 573.519,-562"/>
+<text text-anchor="middle" x="545.019" y="-541.2" font-family="Courier,monospace" font-size="11.00">TAGEnd</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGEnd&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge9" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGEnd&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M516.218,-542.372C440.899,-537.961 232.03,-525.728 134.459,-520.014"/>
+<polygon fill="none" stroke="black" points="134.437,-516.507 124.249,-519.416 134.027,-523.495 134.437,-516.507"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGFloat -->
+<g id="node9" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGFloat</title>
+<polygon fill="none" stroke="black" points="1064.04,-562 993.038,-562 993.038,-526 1064.04,-526 1064.04,-562"/>
+<text text-anchor="middle" x="1028.54" y="-541.2" font-family="Courier,monospace" font-size="11.00">TAGFloat</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGFloat&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge10" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGFloat&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M992.731,-531.926C982.396,-527.772 971.25,-522.71 961.538,-517 928.42,-497.527 929.772,-477.11 894.038,-463 792.976,-423.093 662.765,-425.841 593.808,-431.071"/>
+<polygon fill="none" stroke="black" points="593.37,-427.595 583.685,-431.891 593.935,-434.572 593.37,-427.595"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGInt -->
+<g id="node10" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGInt</title>
+<polygon fill="none" stroke="black" points="1057.04,-508 1000.04,-508 1000.04,-472 1057.04,-472 1057.04,-508"/>
+<text text-anchor="middle" x="1028.54" y="-487.2" font-family="Courier,monospace" font-size="11.00">TAGInt</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGInt&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge11" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGInt&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M999.838,-483.368C972.955,-477.176 930.924,-468.141 894.038,-463 787.355,-448.13 661.048,-440.893 593.794,-437.858"/>
+<polygon fill="none" stroke="black" points="593.664,-434.349 583.52,-437.407 593.356,-441.342 593.664,-434.349"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGList -->
+<g id="node11" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGList</title>
+<polygon fill="none" stroke="black" points="577.019,-508 513.019,-508 513.019,-472 577.019,-472 577.019,-508"/>
+<text text-anchor="middle" x="545.019" y="-487.2" font-family="Courier,monospace" font-size="11.00">TAGList</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGList&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge12" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGList&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M512.694,-491.835C434.479,-496.415 230.03,-508.389 134.095,-514.008"/>
+<polygon fill="none" stroke="black" points="133.83,-510.517 124.052,-514.596 134.239,-517.505 133.83,-510.517"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGLong -->
+<g id="node12" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGLong</title>
+<polygon fill="none" stroke="black" points="1060.54,-454 996.538,-454 996.538,-418 1060.54,-418 1060.54,-454"/>
+<text text-anchor="middle" x="1028.54" y="-433.2" font-family="Courier,monospace" font-size="11.00">TAGLong</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGLong&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge13" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGLong&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M996.315,-436C914.276,-436 692.2,-436 593.921,-436"/>
+<polygon fill="none" stroke="black" points="593.684,-432.5 583.684,-436 593.684,-439.5 593.684,-432.5"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGNumber&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge14" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGNumber&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M506.436,-434.459C441.793,-432.787 305.908,-433.573 196,-463 170.203,-469.907 143.148,-482.617 121.981,-493.971"/>
+<polygon fill="none" stroke="black" points="120.079,-491.022 112.994,-498.899 123.445,-497.16 120.079,-491.022"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGShort -->
+<g id="node15" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGShort</title>
+<polygon fill="none" stroke="black" points="1064.04,-400 993.038,-400 993.038,-364 1064.04,-364 1064.04,-400"/>
+<text text-anchor="middle" x="1028.54" y="-379.2" font-family="Courier,monospace" font-size="11.00">TAGShort</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGShort&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber -->
+<g id="edge15" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGShort&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNumber</title>
+<path fill="none" stroke="black" d="M992.883,-390.22C966.052,-396.289 927.88,-404.283 894.038,-409 787.355,-423.87 661.048,-431.107 593.794,-434.142"/>
+<polygon fill="none" stroke="black" points="593.356,-430.658 583.52,-434.593 593.664,-437.651 593.356,-430.658"/>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGString -->
+<g id="node16" class="node"><title>\\Slothsoft\\Minecraft\\NBT\\TAGString</title>
+<polygon fill="none" stroke="black" points="583.519,-400 506.519,-400 506.519,-364 583.519,-364 583.519,-400"/>
+<text text-anchor="middle" x="545.019" y="-379.2" font-family="Courier,monospace" font-size="11.00">TAGString</text>
+</g>
+<!-- \\Slothsoft\\Minecraft\\NBT\\TAGString&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode -->
+<g id="edge16" class="edge"><title>\\Slothsoft\\Minecraft\\NBT\\TAGString&#45;&gt;\\Slothsoft\\Minecraft\\NBT\\TAGNode</title>
+<path fill="none" stroke="black" d="M506.472,-376.981C440.431,-369.831 300.578,-362.286 196,-409 156.153,-426.8 121.775,-464.857 101.721,-490.695"/>
+<polygon fill="none" stroke="black" points="98.7238,-488.856 95.4819,-498.943 104.306,-493.079 98.7238,-488.856"/>
 </g>
 <!-- \\Slothsoft\\Minecraft\\LogPagesDocument -->
 <g id="node17" class="node"><title>\\Slothsoft\\Minecraft\\LogPagesDocument</title>
@@ -201,7 +201,7 @@
 <text text-anchor="middle" x="545.019" y="-14.3" font-family="Times New Roman,serif" font-size="14.00" fill="gray">\Slothsoft\Core\IO\Writable\DOMWriterInterface</text>
 </g>
 <!-- \\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface -->
-<g id="edge12" class="edge"><title>\\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface</title>
+<g id="edge4" class="edge"><title>\\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface</title>
 <path fill="none" stroke="black" stroke-dasharray="1,5" d="M1009.13,-121.808C985.004,-99.2654 940.301,-61.78 894.038,-45 845.97,-27.5652 791.782,-18.6901 740.73,-14.6262"/>
 <polygon fill="none" stroke="black" points="740.795,-11.1215 730.564,-13.8764 740.28,-18.1026 740.795,-11.1215"/>
 </g>
