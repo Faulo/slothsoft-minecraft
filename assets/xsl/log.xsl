@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-	xmlns="http://www.w3.org/1999/xhtml"
+<xsl:stylesheet version="1.0" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
- 
+
 	<xsl:template match="/*">
 		<article class="minecraft-log paintedBox">
 			<script type="application/javascript"><![CDATA[
@@ -57,7 +56,7 @@ addEventListener(
 );
 		]]></script>
 			<h2>Online Players Log</h2>
-			<xsl:copy-of select="*[@name='log-content']/*"/>
+			<xsl:copy-of select="*[@name='log-content']/*" />
 		</article>
 	</xsl:template>
 </xsl:stylesheet>

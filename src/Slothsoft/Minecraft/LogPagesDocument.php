@@ -8,31 +8,39 @@ use DOMElement;
 
 class LogPagesDocument implements DOMWriterInterface
 {
+
     private $startYear;
+
     private $startMonth;
+
     private $endYear;
+
     private $endMonth;
-    public function __construct(int $startYear, int $startMonth, int $endYear, int $endMonth) {
+
+    public function __construct(int $startYear, int $startMonth, int $endYear, int $endMonth)
+    {
         $this->startYear = $startYear;
         $this->startMonth = $startMonth;
         $this->endYear = $endYear;
         $this->endMonth = $endMonth;
     }
-    public function toElement(DOMDocument $targetDoc) : DOMElement
+
+    public function toElement(DOMDocument $targetDoc): DOMElement
     {
         $fragment = $targetDoc->createDocumentFragment();
         $fragment->appendXML($this->buildXml());
         return $fragment->removeChild($fragment->firstChild);
     }
 
-    public function toDocument() : DOMDocument
+    public function toDocument(): DOMDocument
     {
         $document = new DOMDocument();
         $document->loadXML($this->buildXml());
         return $document;
     }
-    
-    private function buildXml() : string {
+
+    private function buildXml(): string
+    {
         $xml = '<sitemap version="1.0" xmlns="http://schema.slothsoft.net/farah/sitemap" xmlns:sfm="http://schema.slothsoft.net/farah/module">';
         
         for ($year = $this->endYear; $year >= $this->startYear; $year --) {

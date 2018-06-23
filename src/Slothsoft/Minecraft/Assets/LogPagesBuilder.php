@@ -16,6 +16,7 @@ use Slothsoft\Minecraft\LogPagesDocument;
  */
 class LogPagesBuilder implements ExecutableBuilderStrategyInterface
 {
+
     public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
     {
         $startYear = 2010;
@@ -29,6 +30,5 @@ class LogPagesBuilder implements ExecutableBuilderStrategyInterface
         
         return new ExecutableStrategies(new DOMWriterResultBuilder($writer));
     }
-
 }
 

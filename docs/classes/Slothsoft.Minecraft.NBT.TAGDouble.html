@@ -1,27 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta charset="utf-8"/>
-    <title>API Documentation</title>
-    <meta name="author" content=""/>
-    <meta name="description" content=""/>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta charset="utf-8" />
+<title>API Documentation</title>
+<meta name="author" content="" />
+<meta name="description" content="" />
 
-    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/prism.css" rel="stylesheet" media="all"/>
-    <link href="../css/template.css" rel="stylesheet" media="all"/>
-    
-    <!--[if lt IE 9]>
+<link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/prism.css" rel="stylesheet" media="all" />
+<link href="../css/template.css" rel="stylesheet" media="all" />
+
+<!--[if lt IE 9]>
     <script src="../js/html5.js"></script>
     <![endif]-->
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.smooth-scroll.js"></script>
-    <script src="../js/prism.min.js"></script>
-    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
-    <script type="text/javascript">
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.smooth-scroll.js"></script>
+<script src="../js/prism.min.js"></script>
+<!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+<script type="text/javascript">
     function loadExternalCodeSnippets() {
         Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
             var src = pre.getAttribute('data-src');
@@ -70,1463 +71,1944 @@
     })
 </script>
 
-    <link rel="shortcut icon" href="../images/favicon.ico"/>
-    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+<link rel="shortcut icon" href="../images/favicon.ico" />
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72"
+	href="../images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114"
+	href="../images/apple-touch-icon-114x114.png" />
 </head>
 <body>
 
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <i class="icon-ellipsis-vertical"></i>
-            </a>
-            <a class="brand" href="../index.html">API Documentation</a>
-
-            <div class="nav-collapse">
-                <ul class="nav pull-right">
-                                        <li class="dropdown">
-                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
-                            API Documentation <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                                                        <li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
-                                                    </ul>
-                    </li>
-                                        <li class="dropdown" id="charts-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Charts <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../graphs/class.html">
-                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown" id="reports-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Reports <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">131</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../reports/deprecated.html">
-                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--<div class="go_to_top">-->
-    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
-    <!--</div>-->
-</div>
-
-<div id="___" class="container-fluid">
-        <section class="row-fluid">
-        <div class="span2 sidebar">
-                                <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-1236042328"></a>
-                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
-            </div>
-            <div id="namespace-1236042328" class="accordion-body collapse in">
-                <div class="accordion-inner">
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1738929867"></a>
-                                <a href="../namespaces/Slothsoft.html" style="margin-left: 30px; padding-left: 0">Slothsoft</a>
-            </div>
-            <div id="namespace-1738929867" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-808284317"></a>
-                                <a href="../namespaces/Slothsoft.Minecraft.html" style="margin-left: 30px; padding-left: 0">Minecraft</a>
-            </div>
-            <div id="namespace-808284317" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-1638786170"></a>
-                                <a href="../namespaces/Slothsoft.Minecraft.Assets.html" style="margin-left: 30px; padding-left: 0">Assets</a>
-            </div>
-            <div id="namespace-1638786170" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                    
-                    <ul>
-                                                                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.Assets.LogBuilder.html">LogBuilder</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.Assets.LogPagesBuilder.html">LogPagesBuilder</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.Assets.StatusBuilder.html">StatusBuilder</a></li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                                                    <div class="accordion" style="margin-bottom: 0">
-        <div class="accordion-group">
-            <div class="accordion-heading">
-                                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-target="#namespace-362711212"></a>
-                                <a href="../namespaces/Slothsoft.Minecraft.NBT.html" style="margin-left: 30px; padding-left: 0">NBT</a>
-            </div>
-            <div id="namespace-362711212" class="accordion-body collapse ">
-                <div class="accordion-inner">
-
-                    
-                    <ul>
-                                                                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGByte.html">TAGByte</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGByteArray.html">TAGByteArray</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGCompound.html">TAGCompound</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html">TAGDouble</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGEnd.html">TAGEnd</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGFloat.html">TAGFloat</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGInt.html">TAGInt</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGList.html">TAGList</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGLong.html">TAGLong</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">TAGNode</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGNumber.html">TAGNumber</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGShort.html">TAGShort</a></li>
-                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.NBT.TAGString.html">TAGString</a></li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    
-                    <ul>
-                                                                                                    <li class="class"><a href="../classes/Slothsoft.Minecraft.LogPagesDocument.html">LogPagesDocument</a></li>
-                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    
-                    <ul>
-                                                                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-                    
-                    <ul>
-                                                                                            </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
-        </div>
-    </section>
-    <section class="row-fluid">
-        <div class="span10 offset2">
-            <div class="row-fluid">
-                <div class="span8 content class">
-                    <nav>
-                                                <a href="../namespaces/Slothsoft.Minecraft.NBT.html">\Slothsoft\Minecraft\NBT</a> <i class="icon-level-up"></i>
-                                            </nav>
-                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
-
-                    <h1><small>\Slothsoft\Minecraft\NBT</small>TAGDouble</h1>
-                    <p><em></em></p>
-                    
-                    
-                                        
-                    <section id="summary">
-                        <h2>Summary</h2>
-                        <section class="row-fluid heading">
-                            <section class="span4">
-                                <a href="#methods">Methods</a>
-                            </section>
-                            <section class="span4">
-                                <a href="#properties">Properties</a>
-                            </section>
-                            <section class="span4">
-                                <a href="#constants">Constants</a>
-                            </section>
-                        </section>
-                        <section class="row-fluid public">
-                            <section class="span4">
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html#method_loadPayload" class="">loadPayload()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getLength" class="">getLength()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getValue" class="">getValue()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_createDocument" class="">createDocument()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_parseDocument" class="">parseDocument()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_createNode" class="">createNode()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getFloat" class="">getFloat()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getInteger" class="">getInteger()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getBinary" class="">getBinary()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_TAG2DOM" class="">TAG2DOM()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method___construct" class="">__construct()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_init" class="">init()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_loadName" class="">loadName()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getPayloadOffset" class="">getPayloadOffset()</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getElementsByName" class="">getElementsByName()</a><br />
-                                                            </section>
-                            <section class="span4">
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Payload" class="">$Payload</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_document" class="">$document</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Root" class="">$Root</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_tagNames" class="">$tagNames</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_offset" class="">$offset</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_exlicitTagType" class="">$exlicitTagType</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Name" class="">$Name</a><br />
-                                                            </section>
-                            <section class="span4">
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_END" class="">TYPE_END</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_BYTE" class="">TYPE_BYTE</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_SHORT" class="">TYPE_SHORT</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_INT" class="">TYPE_INT</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_LONG" class="">TYPE_LONG</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_FLOAT" class="">TYPE_FLOAT</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_DOUBLE" class="">TYPE_DOUBLE</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_BYTEARRAY" class="">TYPE_BYTEARRAY</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_STRING" class="">TYPE_STRING</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_LIST" class="">TYPE_LIST</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_COMPOUND" class="">TYPE_COMPOUND</a><br />
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html#constant_TYPE" class="">TYPE</a><br />
-                                                            </section>
-                        </section>
-                        <section class="row-fluid protected">
-                            <section class="span4">
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_instantiateNode" class="">instantiateNode()</a><br />
-                                                            </section>
-                            <section class="span4">
-                                                                    <a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_type" class="">$type</a><br />
-                                                            </section>
-                            <section class="span4">
-                                <em>N/A</em>
-                            </section>
-                        </section>
-                        <section class="row-fluid private">
-                            <section class="span4">
-                                                                    <em>No private methods found</em>
-                                                            </section>
-                            <section class="span4">
-                                                                    <em>No private properties found</em>
-                                                            </section>
-                            <section class="span4">
-                                <em>N/A</em>
-                            </section>
-                        </section>
-                    </section>
-                </div>
-                <aside class="span4 detailsbar">
-                                        
-                    
-                    <dl>
-                        <dt>File</dt>
-                            <dd><a href="../files/Slothsoft.Minecraft.NBT.TAGDouble.html"><div class="path-wrapper">Slothsoft\Minecraft\NBT\TAGDouble.php</div></a></dd>
-                                                <dt>Package</dt>
-                            <dd><div class="namespace-wrapper">Default</div></dd>
-                                                <dt>Class hierarchy</dt>
-                            <dd class="hierarchy">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-                                        <div class="namespace-wrapper"><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">\Slothsoft\Minecraft\NBT\TAGNode</a></div>
-                                                                    
-                                        <div class="namespace-wrapper"><a href="../classes/Slothsoft.Minecraft.NBT.TAGNumber.html">\Slothsoft\Minecraft\NBT\TAGNumber</a></div>
-                                                                                                    <div class="namespace-wrapper">\Slothsoft\Minecraft\NBT\TAGDouble</div>
-                            </dd>
-
-                        
-                        
-                        
-                        
-                                                                        </dl>
-                    <h2>Tags</h2>
-                    <table class="table table-condensed">
-                                            <tr><td colspan="2"><em>None found</em></td></tr>
-                                        </table>
-                </aside>
-            </div>
-
-                                    <a id="constants" name="constants"></a>
-            <div class="row-fluid">
-                <div class="span8 content class">
-                    <h2>Constants</h2>
-                </div>
-                <aside class="span4 detailsbar"></aside>
-            </div>
-
-                                <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_END" name="constant_TYPE_END" class="anchor"></a>
-            <article id="constant_TYPE_END" class="constant">
-                <h3 class="">TYPE_END</h3>
-                <pre class="signature">TYPE_END</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_BYTE" name="constant_TYPE_BYTE" class="anchor"></a>
-            <article id="constant_TYPE_BYTE" class="constant">
-                <h3 class="">TYPE_BYTE</h3>
-                <pre class="signature">TYPE_BYTE</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_SHORT" name="constant_TYPE_SHORT" class="anchor"></a>
-            <article id="constant_TYPE_SHORT" class="constant">
-                <h3 class="">TYPE_SHORT</h3>
-                <pre class="signature">TYPE_SHORT</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_INT" name="constant_TYPE_INT" class="anchor"></a>
-            <article id="constant_TYPE_INT" class="constant">
-                <h3 class="">TYPE_INT</h3>
-                <pre class="signature">TYPE_INT</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_LONG" name="constant_TYPE_LONG" class="anchor"></a>
-            <article id="constant_TYPE_LONG" class="constant">
-                <h3 class="">TYPE_LONG</h3>
-                <pre class="signature">TYPE_LONG</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_FLOAT" name="constant_TYPE_FLOAT" class="anchor"></a>
-            <article id="constant_TYPE_FLOAT" class="constant">
-                <h3 class="">TYPE_FLOAT</h3>
-                <pre class="signature">TYPE_FLOAT</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_DOUBLE" name="constant_TYPE_DOUBLE" class="anchor"></a>
-            <article id="constant_TYPE_DOUBLE" class="constant">
-                <h3 class="">TYPE_DOUBLE</h3>
-                <pre class="signature">TYPE_DOUBLE</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_BYTEARRAY" name="constant_TYPE_BYTEARRAY" class="anchor"></a>
-            <article id="constant_TYPE_BYTEARRAY" class="constant">
-                <h3 class="">TYPE_BYTEARRAY</h3>
-                <pre class="signature">TYPE_BYTEARRAY</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_STRING" name="constant_TYPE_STRING" class="anchor"></a>
-            <article id="constant_TYPE_STRING" class="constant">
-                <h3 class="">TYPE_STRING</h3>
-                <pre class="signature">TYPE_STRING</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_LIST" name="constant_TYPE_LIST" class="anchor"></a>
-            <article id="constant_TYPE_LIST" class="constant">
-                <h3 class="">TYPE_LIST</h3>
-                <pre class="signature">TYPE_LIST</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE_COMPOUND" name="constant_TYPE_COMPOUND" class="anchor"></a>
-            <article id="constant_TYPE_COMPOUND" class="constant">
-                <h3 class="">TYPE_COMPOUND</h3>
-                <pre class="signature">TYPE_COMPOUND</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="constant_TYPE" name="constant_TYPE" class="anchor"></a>
-            <article id="constant_TYPE" class="constant">
-                <h3 class="">TYPE</h3>
-                <pre class="signature">TYPE</pre>
-                <p><em></em></p>
-                
-            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                            
-                                    <a id="properties" name="properties"></a>
-            <div class="row-fluid">
-                <div class="span8 content class">
-                    <h2>Properties</h2>
-                </div>
-                <aside class="span4 detailsbar"></aside>
-            </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_Payload" name="property_Payload" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$Payload</h3>
-                <pre class="signature">$Payload : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_document" name="property_document" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$document</h3>
-                <pre class="signature">$document : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_Root" name="property_Root" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$Root</h3>
-                <pre class="signature">$Root : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_tagNames" name="property_tagNames" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$tagNames</h3>
-                <pre class="signature">$tagNames : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_offset" name="property_offset" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$offset</h3>
-                <pre class="signature">$offset : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_exlicitTagType" name="property_exlicitTagType" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$exlicitTagType</h3>
-                <pre class="signature">$exlicitTagType : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_Name" name="property_Name" class="anchor"></a>
-            <article class="property">
-                <h3 class="public ">$Name</h3>
-                <pre class="signature">$Name : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="property_type" name="property_type" class="anchor"></a>
-            <article class="property">
-                <h3 class="protected ">$type</h3>
-                <pre class="signature">$type : </pre>
-                <p><em></em></p>
-                
-
-                                <h4>Type</h4>
-                
-                                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                        <dl>
-                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                            
-                                    <a id="methods" name="methods"></a>
-            <div class="row-fluid">
-                <div class="span8 content class"><h2>Methods</h2></div>
-                <aside class="span4 detailsbar"></aside>
-            </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_loadPayload" name="method_loadPayload" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">loadPayload()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">loadPayload() </pre>
-                <p><em></em></p>
-                
-
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getLength" name="method_getLength" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getLength()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getLength() </pre>
-                <p><em></em></p>
-                
-
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getValue" name="method_getValue" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getValue()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getValue() </pre>
-                <p><em></em></p>
-                
-
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                        <span class="label label-info">abstract</span>
-                                                <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_createDocument" name="method_createDocument" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">createDocument()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">createDocument(  <span class="argument">$string</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$string </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_parseDocument" name="method_parseDocument" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">parseDocument()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">parseDocument(  <span class="argument">$offset</span>,   <span class="argument">$namedTag = true</span>,   <span class="argument">$tagType = null</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$namedTag </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$tagType </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_createNode" name="method_createNode" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">createNode()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">createNode(  <span class="argument">$tagType</span>,   <span class="argument">$offset</span>,   <span class="argument">$namedTag = false</span>,   <span class="argument">$exlicitTagType = false</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$tagType </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$namedTag </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$exlicitTagType </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getFloat" name="method_getFloat" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getFloat()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getFloat(  <span class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$length </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getInteger" name="method_getInteger" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getInteger()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getInteger(  <span class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$length </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getBinary" name="method_getBinary" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getBinary()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getBinary(  <span class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$length </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_TAG2DOM" name="method_TAG2DOM" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">TAG2DOM()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">TAG2DOM(\DOMDocument  <span class="argument">$Doc</span>, \Slothsoft\Minecraft\NBT\TAGNode  <span class="argument">$Tag</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td>\DOMDocument</td>
-                                <td>$Doc </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">\Slothsoft\Minecraft\NBT\TAGNode</a></td>
-                                <td>$Tag </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method___construct" name="method___construct" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">__construct()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">__construct(  <span class="argument">$tagType</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$tagType </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_init" name="method_init" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">init()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">init(  <span class="argument">$offset = null</span>,   <span class="argument">$namedTag = false</span>,   <span class="argument">$exlicitTagType = false</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$offset </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$namedTag </td>
-                                <td></td>
-                            </tr>
-                                                    <tr>
-                                <td></td>
-                                <td>$exlicitTagType </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_loadName" name="method_loadName" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">loadName()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">loadName() </pre>
-                <p><em></em></p>
-                
-
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getPayloadOffset" name="method_getPayloadOffset" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getPayloadOffset()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getPayloadOffset() </pre>
-                <p><em></em></p>
-                
-
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_getElementsByName" name="method_getElementsByName" class="anchor"></a>
-            <article class="method">
-                <h3 class="public ">getElementsByName()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">getElementsByName(  <span class="argument">$name</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$name </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                                    <div class="row-fluid">
-        <div class="span8 content class">
-            <a id="method_instantiateNode" name="method_instantiateNode" class="anchor"></a>
-            <article class="method">
-                <h3 class="protected ">instantiateNode()</h3>
-                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
-                <pre class="signature" style="margin-right: 54px;">instantiateNode(  <span class="argument">$tagType</span>) </pre>
-                <p><em></em></p>
-                
-
-                                    <h4>Parameters</h4>
-                    <table class="table table-condensed table-hover">
-                                                    <tr>
-                                <td></td>
-                                <td>$tagType </td>
-                                <td></td>
-                            </tr>
-                                            </table>
-                
-                
-                				
-                            </article>
-        </div>
-        <aside class="span4 detailsbar">
-            <h1><i class="icon-arrow-down"></i></h1>
-                            <span class="label label-info">static</span>
-                                                            <dl>
-                                                    <dt>Inherited from</dt>
-                    <dd><a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a></dd>
-                                                            </dl>
-            <h2>Tags</h2>
-            <table class="table table-condensed">
-                                    <tr><td colspan="2"><em>None found</em></td></tr>
-                            </table>
-        </aside>
-    </div>
-
-                                                    </div>
-    </section>
-
-    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
-        <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-            <h3 id="source-view-label">TAGDouble.php</h3>
-        </div>
-        <div class="modal-body">
-            <pre data-src="../files/Slothsoft\Minecraft\NBT\TAGDouble.php.txt" class="language-php line-numbers"></pre>
-        </div>
-    </div>
-
-    <footer class="row-fluid">
-        <section class="span10 offset2">
-            <section class="row-fluid">
-                <section class="span10 offset1">
-                    <section class="row-fluid footer-sections">
-                        <section class="span4">
-                                                        <h1><i class="icon-code"></i></h1>
-                            <div>
-                                <ul>
-                                                                            <li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
-                                                                    </ul>
-                            </div>
-                        </section>
-                        <section class="span4">
-                                                        <h1><i class="icon-bar-chart"></i></h1>
-                            <div>
-                                <ul>
-                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
-                                </ul>
-                            </div>
-                        </section>
-                        <section class="span4">
-                                                        <h1><i class="icon-pushpin"></i></h1>
-                            <div>
-                                <ul>
-                                    <li><a href="../reports/errors.html">Errors</a></li>
-                                    <li><a href="../reports/markers.html">Markers</a></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <section class="row-fluid">
-                <section class="span10 offset1">
-                    <hr />
-                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on June 6th, 2018 at 20:05.
-                </section>
-            </section>
-        </section>
-    </footer>
-</div>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <i class="icon-ellipsis-vertical"></i>
+				</a> <a class="brand" href="../index.html">API Documentation</a>
+
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li class="dropdown"><a href="../index.html"
+							class="dropdown-toggle" data-toggle="dropdown"> API
+								Documentation <b class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
+							</ul></li>
+						<li class="dropdown" id="charts-menu"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown"> Charts <b
+								class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../graphs/class.html"> <i
+										class="icon-list-alt"></i>&#160;Class hierarchy diagram
+								</a></li>
+							</ul></li>
+						<li class="dropdown" id="reports-menu"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown"> Reports <b
+								class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../reports/errors.html"> <i
+										class="icon-list-alt"></i>&#160;Errors <span
+										class="label label-info pull-right">131</span>
+								</a></li>
+								<li><a href="../reports/markers.html"> <i
+										class="icon-list-alt"></i>&#160;Markers <span
+										class="label label-info pull-right">0</span>
+								</a></li>
+								<li><a href="../reports/deprecated.html"> <i
+										class="icon-list-alt"></i>&#160;Deprecated <span
+										class="label label-info pull-right">0</span>
+								</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--<div class="go_to_top">-->
+		<!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+		<!--</div>-->
+	</div>
+
+	<div id="___" class="container-fluid">
+		<section class="row-fluid">
+			<div class="span2 sidebar">
+				<div class="accordion" style="margin-bottom: 0">
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle " data-toggle="collapse"
+								data-target="#namespace-1672926621"></a> <a
+								href="../namespaces/default.html"
+								style="margin-left: 30px; padding-left: 0">\</a>
+						</div>
+						<div id="namespace-1672926621" class="accordion-body collapse in">
+							<div class="accordion-inner">
+
+								<div class="accordion" style="margin-bottom: 0">
+									<div class="accordion-group">
+										<div class="accordion-heading">
+											<a class="accordion-toggle collapsed" data-toggle="collapse"
+												data-target="#namespace-212968442"></a> <a
+												href="../namespaces/Slothsoft.html"
+												style="margin-left: 30px; padding-left: 0">Slothsoft</a>
+										</div>
+										<div id="namespace-212968442" class="accordion-body collapse ">
+											<div class="accordion-inner">
+
+												<div class="accordion" style="margin-bottom: 0">
+													<div class="accordion-group">
+														<div class="accordion-heading">
+															<a class="accordion-toggle collapsed"
+																data-toggle="collapse"
+																data-target="#namespace-1259027990"></a> <a
+																href="../namespaces/Slothsoft.Minecraft.html"
+																style="margin-left: 30px; padding-left: 0">Minecraft</a>
+														</div>
+														<div id="namespace-1259027990"
+															class="accordion-body collapse ">
+															<div class="accordion-inner">
+
+																<div class="accordion" style="margin-bottom: 0">
+																	<div class="accordion-group">
+																		<div class="accordion-heading">
+																			<a class="accordion-toggle collapsed"
+																				data-toggle="collapse"
+																				data-target="#namespace-1648055984"></a> <a
+																				href="../namespaces/Slothsoft.Minecraft.Assets.html"
+																				style="margin-left: 30px; padding-left: 0">Assets</a>
+																		</div>
+																		<div id="namespace-1648055984"
+																			class="accordion-body collapse ">
+																			<div class="accordion-inner">
+
+
+																				<ul>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.Assets.LogBuilder.html">LogBuilder</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.Assets.LogPagesBuilder.html">LogPagesBuilder</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.Assets.StatusBuilder.html">StatusBuilder</a></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+																<div class="accordion" style="margin-bottom: 0">
+																	<div class="accordion-group">
+																		<div class="accordion-heading">
+																			<a class="accordion-toggle collapsed"
+																				data-toggle="collapse"
+																				data-target="#namespace-5812665"></a> <a
+																				href="../namespaces/Slothsoft.Minecraft.NBT.html"
+																				style="margin-left: 30px; padding-left: 0">NBT</a>
+																		</div>
+																		<div id="namespace-5812665"
+																			class="accordion-body collapse ">
+																			<div class="accordion-inner">
+
+
+																				<ul>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGByte.html">TAGByte</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGByteArray.html">TAGByteArray</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGCompound.html">TAGCompound</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html">TAGDouble</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGEnd.html">TAGEnd</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGFloat.html">TAGFloat</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGInt.html">TAGInt</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGList.html">TAGList</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGLong.html">TAGLong</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">TAGNode</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGNumber.html">TAGNumber</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGShort.html">TAGShort</a></li>
+																					<li class="class"><a
+																						href="../classes/Slothsoft.Minecraft.NBT.TAGString.html">TAGString</a></li>
+																				</ul>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+
+
+																<ul>
+																	<li class="class"><a
+																		href="../classes/Slothsoft.Minecraft.LogPagesDocument.html">LogPagesDocument</a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+												</div>
+
+
+												<ul>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<section class="row-fluid">
+			<div class="span10 offset2">
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<nav>
+							<a href="../namespaces/Slothsoft.Minecraft.NBT.html">\Slothsoft\Minecraft\NBT</a>
+							<i class="icon-level-up"></i>
+						</nav>
+						<a href="#source-view" role="button" class="pull-right btn"
+							data-toggle="modal"><i class="icon-code"></i></a>
+
+						<h1>
+							<small>\Slothsoft\Minecraft\NBT</small>TAGDouble
+						</h1>
+						<p>
+							<em></em>
+						</p>
+
+
+
+						<section id="summary">
+							<h2>Summary</h2>
+							<section class="row-fluid heading">
+								<section class="span4">
+									<a href="#methods">Methods</a>
+								</section>
+								<section class="span4">
+									<a href="#properties">Properties</a>
+								</section>
+								<section class="span4">
+									<a href="#constants">Constants</a>
+								</section>
+							</section>
+							<section class="row-fluid public">
+								<section class="span4">
+									<a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html#method_loadPayload"
+										class="">loadPayload()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getLength"
+										class="">getLength()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getValue"
+										class="">getValue()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_createDocument"
+										class="">createDocument()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_parseDocument"
+										class="">parseDocument()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_createNode"
+										class="">createNode()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getFloat"
+										class="">getFloat()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getInteger"
+										class="">getInteger()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getBinary"
+										class="">getBinary()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_TAG2DOM"
+										class="">TAG2DOM()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method___construct"
+										class="">__construct()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_init"
+										class="">init()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_loadName"
+										class="">loadName()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getPayloadOffset"
+										class="">getPayloadOffset()</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_getElementsByName"
+										class="">getElementsByName()</a><br />
+								</section>
+								<section class="span4">
+									<a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Payload"
+										class="">$Payload</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_document"
+										class="">$document</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Root"
+										class="">$Root</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_tagNames"
+										class="">$tagNames</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_offset"
+										class="">$offset</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_exlicitTagType"
+										class="">$exlicitTagType</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_Name"
+										class="">$Name</a><br />
+								</section>
+								<section class="span4">
+									<a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_END"
+										class="">TYPE_END</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_BYTE"
+										class="">TYPE_BYTE</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_SHORT"
+										class="">TYPE_SHORT</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_INT"
+										class="">TYPE_INT</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_LONG"
+										class="">TYPE_LONG</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_FLOAT"
+										class="">TYPE_FLOAT</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_DOUBLE"
+										class="">TYPE_DOUBLE</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_BYTEARRAY"
+										class="">TYPE_BYTEARRAY</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_STRING"
+										class="">TYPE_STRING</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_LIST"
+										class="">TYPE_LIST</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#constant_TYPE_COMPOUND"
+										class="">TYPE_COMPOUND</a><br /> <a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGDouble.html#constant_TYPE"
+										class="">TYPE</a><br />
+								</section>
+							</section>
+							<section class="row-fluid protected">
+								<section class="span4">
+									<a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#method_instantiateNode"
+										class="">instantiateNode()</a><br />
+								</section>
+								<section class="span4">
+									<a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html#property_type"
+										class="">$type</a><br />
+								</section>
+								<section class="span4">
+									<em>N/A</em>
+								</section>
+							</section>
+							<section class="row-fluid private">
+								<section class="span4">
+									<em>No private methods found</em>
+								</section>
+								<section class="span4">
+									<em>No private properties found</em>
+								</section>
+								<section class="span4">
+									<em>N/A</em>
+								</section>
+							</section>
+						</section>
+					</div>
+					<aside class="span4 detailsbar">
+
+
+						<dl>
+							<dt>File</dt>
+							<dd>
+								<a href="../files/Slothsoft.Minecraft.NBT.TAGDouble.html"><div
+										class="path-wrapper">Slothsoft\Minecraft\NBT\TAGDouble.php</div></a>
+							</dd>
+							<dt>Package</dt>
+							<dd>
+								<div class="namespace-wrapper">Default</div>
+							</dd>
+							<dt>Class hierarchy</dt>
+							<dd class="hierarchy">
+
+								<div class="namespace-wrapper">
+									<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">\Slothsoft\Minecraft\NBT\TAGNode</a>
+								</div>
+
+								<div class="namespace-wrapper">
+									<a href="../classes/Slothsoft.Minecraft.NBT.TAGNumber.html">\Slothsoft\Minecraft\NBT\TAGNumber</a>
+								</div>
+								<div class="namespace-wrapper">\Slothsoft\Minecraft\NBT\TAGDouble</div>
+							</dd>
+
+
+
+
+
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<a id="constants" name="constants"></a>
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<h2>Constants</h2>
+					</div>
+					<aside class="span4 detailsbar"></aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_END" name="constant_TYPE_END" class="anchor"></a>
+						<article id="constant_TYPE_END" class="constant">
+							<h3 class="">TYPE_END</h3>
+							<pre class="signature">TYPE_END</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_BYTE" name="constant_TYPE_BYTE"
+							class="anchor"></a>
+						<article id="constant_TYPE_BYTE" class="constant">
+							<h3 class="">TYPE_BYTE</h3>
+							<pre class="signature">TYPE_BYTE</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_SHORT" name="constant_TYPE_SHORT"
+							class="anchor"></a>
+						<article id="constant_TYPE_SHORT" class="constant">
+							<h3 class="">TYPE_SHORT</h3>
+							<pre class="signature">TYPE_SHORT</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_INT" name="constant_TYPE_INT" class="anchor"></a>
+						<article id="constant_TYPE_INT" class="constant">
+							<h3 class="">TYPE_INT</h3>
+							<pre class="signature">TYPE_INT</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_LONG" name="constant_TYPE_LONG"
+							class="anchor"></a>
+						<article id="constant_TYPE_LONG" class="constant">
+							<h3 class="">TYPE_LONG</h3>
+							<pre class="signature">TYPE_LONG</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_FLOAT" name="constant_TYPE_FLOAT"
+							class="anchor"></a>
+						<article id="constant_TYPE_FLOAT" class="constant">
+							<h3 class="">TYPE_FLOAT</h3>
+							<pre class="signature">TYPE_FLOAT</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_DOUBLE" name="constant_TYPE_DOUBLE"
+							class="anchor"></a>
+						<article id="constant_TYPE_DOUBLE" class="constant">
+							<h3 class="">TYPE_DOUBLE</h3>
+							<pre class="signature">TYPE_DOUBLE</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_BYTEARRAY" name="constant_TYPE_BYTEARRAY"
+							class="anchor"></a>
+						<article id="constant_TYPE_BYTEARRAY" class="constant">
+							<h3 class="">TYPE_BYTEARRAY</h3>
+							<pre class="signature">TYPE_BYTEARRAY</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_STRING" name="constant_TYPE_STRING"
+							class="anchor"></a>
+						<article id="constant_TYPE_STRING" class="constant">
+							<h3 class="">TYPE_STRING</h3>
+							<pre class="signature">TYPE_STRING</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_LIST" name="constant_TYPE_LIST"
+							class="anchor"></a>
+						<article id="constant_TYPE_LIST" class="constant">
+							<h3 class="">TYPE_LIST</h3>
+							<pre class="signature">TYPE_LIST</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE_COMPOUND" name="constant_TYPE_COMPOUND"
+							class="anchor"></a>
+						<article id="constant_TYPE_COMPOUND" class="constant">
+							<h3 class="">TYPE_COMPOUND</h3>
+							<pre class="signature">TYPE_COMPOUND</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="constant_TYPE" name="constant_TYPE" class="anchor"></a>
+						<article id="constant_TYPE" class="constant">
+							<h3 class="">TYPE</h3>
+							<pre class="signature">TYPE</pre>
+							<p>
+								<em></em>
+							</p>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+
+				<a id="properties" name="properties"></a>
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<h2>Properties</h2>
+					</div>
+					<aside class="span4 detailsbar"></aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_Payload" name="property_Payload" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$Payload</h3>
+							<pre class="signature">$Payload : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_document" name="property_document" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$document</h3>
+							<pre class="signature">$document : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_Root" name="property_Root" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$Root</h3>
+							<pre class="signature">$Root : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_tagNames" name="property_tagNames" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$tagNames</h3>
+							<pre class="signature">$tagNames : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_offset" name="property_offset" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$offset</h3>
+							<pre class="signature">$offset : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_exlicitTagType" name="property_exlicitTagType"
+							class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$exlicitTagType</h3>
+							<pre class="signature">$exlicitTagType : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_Name" name="property_Name" class="anchor"></a>
+						<article class="property">
+							<h3 class="public ">$Name</h3>
+							<pre class="signature">$Name : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="property_type" name="property_type" class="anchor"></a>
+						<article class="property">
+							<h3 class="protected ">$type</h3>
+							<pre class="signature">$type : </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Type</h4>
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+
+				<a id="methods" name="methods"></a>
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<h2>Methods</h2>
+					</div>
+					<aside class="span4 detailsbar"></aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_loadPayload" name="method_loadPayload"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">loadPayload()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">loadPayload() </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getLength" name="method_getLength" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getLength()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getLength() </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getValue" name="method_getValue" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getValue()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getValue() </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">abstract</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_createDocument" name="method_createDocument"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">createDocument()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">createDocument(  <span
+									class="argument">$string</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$string</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_parseDocument" name="method_parseDocument"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">parseDocument()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">parseDocument(  <span
+									class="argument">$offset</span>,   <span class="argument">$namedTag = true</span>,   <span
+									class="argument">$tagType = null</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$namedTag</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$tagType</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_createNode" name="method_createNode" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">createNode()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">createNode(  <span
+									class="argument">$tagType</span>,   <span class="argument">$offset</span>,   <span
+									class="argument">$namedTag = false</span>,   <span
+									class="argument">$exlicitTagType = false</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$tagType</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$namedTag</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$exlicitTagType</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getFloat" name="method_getFloat" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getFloat()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getFloat(  <span
+									class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$length</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getInteger" name="method_getInteger" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getInteger()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getInteger(  <span
+									class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$length</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getBinary" name="method_getBinary" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getBinary()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getBinary(  <span
+									class="argument">$offset</span>,   <span class="argument">$length</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$length</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_TAG2DOM" name="method_TAG2DOM" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">TAG2DOM()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">TAG2DOM(\DOMDocument  <span
+									class="argument">$Doc</span>, \Slothsoft\Minecraft\NBT\TAGNode  <span
+									class="argument">$Tag</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td>\DOMDocument</td>
+									<td>$Doc</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td><a
+										href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html">\Slothsoft\Minecraft\NBT\TAGNode</a></td>
+									<td>$Tag</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method___construct" name="method___construct"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">__construct()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">__construct(  <span
+									class="argument">$tagType</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$tagType</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_init" name="method_init" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">init()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">init(  <span
+									class="argument">$offset = null</span>,   <span
+									class="argument">$namedTag = false</span>,   <span
+									class="argument">$exlicitTagType = false</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$offset</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$namedTag</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td></td>
+									<td>$exlicitTagType</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_loadName" name="method_loadName" class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">loadName()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">loadName() </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getPayloadOffset" name="method_getPayloadOffset"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getPayloadOffset()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getPayloadOffset() </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_getElementsByName" name="method_getElementsByName"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="public ">getElementsByName()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">getElementsByName(  <span
+									class="argument">$name</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$name</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+				<div class="row-fluid">
+					<div class="span8 content class">
+						<a id="method_instantiateNode" name="method_instantiateNode"
+							class="anchor"></a>
+						<article class="method">
+							<h3 class="protected ">instantiateNode()</h3>
+							<a href="#source-view" role="button" class="pull-right btn"
+								data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i
+								class="icon-code"></i></a>
+							<pre class="signature" style="margin-right: 54px;">instantiateNode(  <span
+									class="argument">$tagType</span>) </pre>
+							<p>
+								<em></em>
+							</p>
+
+
+							<h4>Parameters</h4>
+							<table class="table table-condensed table-hover">
+								<tr>
+									<td></td>
+									<td>$tagType</td>
+									<td></td>
+								</tr>
+							</table>
+
+
+
+						</article>
+					</div>
+					<aside class="span4 detailsbar">
+						<h1>
+							<i class="icon-arrow-down"></i>
+						</h1>
+						<span class="label label-info">static</span>
+						<dl>
+							<dt>Inherited from</dt>
+							<dd>
+								<a href="../classes/Slothsoft.Minecraft.NBT.TAGNode.html"><div
+										class="path-wrapper">\Slothsoft\Minecraft\NBT\TAGNode</div></a>
+							</dd>
+						</dl>
+						<h2>Tags</h2>
+						<table class="table table-condensed">
+							<tr>
+								<td colspan="2"><em>None found</em></td>
+							</tr>
+						</table>
+					</aside>
+				</div>
+
+			</div>
+		</section>
+
+		<div id="source-view" class="modal hide fade" tabindex="-1"
+			role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"
+					aria-hidden="true">×</button>
+				<h3 id="source-view-label">TAGDouble.php</h3>
+			</div>
+			<div class="modal-body">
+				<pre data-src="../files/Slothsoft\Minecraft\NBT\TAGDouble.php.txt"
+					class="language-php line-numbers"></pre>
+			</div>
+		</div>
+
+		<footer class="row-fluid">
+			<section class="span10 offset2">
+				<section class="row-fluid">
+					<section class="span10 offset1">
+						<section class="row-fluid footer-sections">
+							<section class="span4">
+								<h1>
+									<i class="icon-code"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="span4">
+								<h1>
+									<i class="icon-bar-chart"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../graphs/class.html">Class Hierarchy
+												Diagram</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="span4">
+								<h1>
+									<i class="icon-pushpin"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../reports/errors.html">Errors</a></li>
+										<li><a href="../reports/markers.html">Markers</a></li>
+									</ul>
+								</div>
+							</section>
+						</section>
+					</section>
+				</section>
+				<section class="row-fluid">
+					<section class="span10 offset1">
+						<hr />
+						Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor
+						</a> and authored on June 23rd, 2018 at 18:11.
+					</section>
+				</section>
+			</section>
+		</footer>
+	</div>
 
 </body>
 </html>

@@ -1,1209 +1,1273 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-    <meta charset="utf-8"/>
-    <title>     &raquo; Compilation errors
-</title>
-    <meta name="author" content=""/>
-    <meta name="description" content=""/>
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<meta charset="utf-8" />
+<title>&raquo; Compilation errors</title>
+<meta name="author" content="" />
+<meta name="description" content="" />
 
-    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
-    <link href="../css/font-awesome.min.css" rel="stylesheet">
-    <link href="../css/prism.css" rel="stylesheet" media="all"/>
-    <link href="../css/template.css" rel="stylesheet" media="all"/>
-    
-    <!--[if lt IE 9]>
+<link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+<link href="../css/font-awesome.min.css" rel="stylesheet">
+<link href="../css/prism.css" rel="stylesheet" media="all" />
+<link href="../css/template.css" rel="stylesheet" media="all" />
+
+<!--[if lt IE 9]>
     <script src="../js/html5.js"></script>
     <![endif]-->
-    <script src="../js/jquery-1.11.0.min.js"></script>
-    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
-    <script src="../js/bootstrap.min.js"></script>
-    <script src="../js/jquery.smooth-scroll.js"></script>
-    <script src="../js/prism.min.js"></script>
-    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
-    
-    <link rel="shortcut icon" href="../images/favicon.ico"/>
-    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
-    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
-    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script src="../js/jquery.smooth-scroll.js"></script>
+<script src="../js/prism.min.js"></script>
+<!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+
+<link rel="shortcut icon" href="../images/favicon.ico" />
+<link rel="apple-touch-icon" href="../images/apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72"
+	href="../images/apple-touch-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114"
+	href="../images/apple-touch-icon-114x114.png" />
 </head>
 <body>
 
-<div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-        <div class="container">
-            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-                <i class="icon-ellipsis-vertical"></i>
-            </a>
-            <a class="brand" href="../index.html">API Documentation</a>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<a class="btn btn-navbar" data-toggle="collapse"
+					data-target=".nav-collapse"> <i class="icon-ellipsis-vertical"></i>
+				</a> <a class="brand" href="../index.html">API Documentation</a>
 
-            <div class="nav-collapse">
-                <ul class="nav pull-right">
-                                        <li class="dropdown">
-                        <a href="../index.html" class="dropdown-toggle" data-toggle="dropdown">
-                            API Documentation <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                                                        <li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
-                                                    </ul>
-                    </li>
-                                        <li class="dropdown" id="charts-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Charts <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../graphs/class.html">
-                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown" id="reports-menu">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            Reports <b class="caret"></b>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="../reports/errors.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">131</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../reports/markers.html">
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="../reports/deprecated.html">
-                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <!--<div class="go_to_top">-->
-    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
-    <!--</div>-->
-</div>
+				<div class="nav-collapse">
+					<ul class="nav pull-right">
+						<li class="dropdown"><a href="../index.html"
+							class="dropdown-toggle" data-toggle="dropdown"> API
+								Documentation <b class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
+							</ul></li>
+						<li class="dropdown" id="charts-menu"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown"> Charts <b
+								class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../graphs/class.html"> <i
+										class="icon-list-alt"></i>&#160;Class hierarchy diagram
+								</a></li>
+							</ul></li>
+						<li class="dropdown" id="reports-menu"><a href="#"
+							class="dropdown-toggle" data-toggle="dropdown"> Reports <b
+								class="caret"></b>
+						</a>
+							<ul class="dropdown-menu">
+								<li><a href="../reports/errors.html"> <i
+										class="icon-list-alt"></i>&#160;Errors <span
+										class="label label-info pull-right">131</span>
+								</a></li>
+								<li><a href="../reports/markers.html"> <i
+										class="icon-list-alt"></i>&#160;Markers <span
+										class="label label-info pull-right">0</span>
+								</a></li>
+								<li><a href="../reports/deprecated.html"> <i
+										class="icon-list-alt"></i>&#160;Deprecated <span
+										class="label label-info pull-right">0</span>
+								</a></li>
+							</ul></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--<div class="go_to_top">-->
+		<!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+		<!--</div>-->
+	</div>
 
-<div id="___" class="container-fluid">
-        <section class="row-fluid">
-        <div class="span2 sidebar">
+	<div id="___" class="container-fluid">
+		<section class="row-fluid">
+			<div class="span2 sidebar">
 
-            <ul class="side-nav nav nav-list">
-                <li class="nav-header">Navigation</li>
-                                                                            <li><a href="#registerModule.php"><i class="icon-file"></i> registerModule.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\Assets\LogBuilder.php"><i class="icon-file"></i> Slothsoft\Minecraft\Assets\LogBuilder.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\Assets\LogPagesBuilder.php"><i class="icon-file"></i> Slothsoft\Minecraft\Assets\LogPagesBuilder.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\Assets\StatusBuilder.php"><i class="icon-file"></i> Slothsoft\Minecraft\Assets\StatusBuilder.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\LogPagesDocument.php"><i class="icon-file"></i> Slothsoft\Minecraft\LogPagesDocument.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGByte.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByte.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGByteArray.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByteArray.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGCompound.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGCompound.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGDouble.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGDouble.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGEnd.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGEnd.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGFloat.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGFloat.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGInt.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGInt.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGList.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGList.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGLong.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGLong.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGNode.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNode.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGNumber.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNumber.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGShort.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGShort.php</a></li>
-                                                                                                    <li><a href="#Slothsoft\Minecraft\NBT\TAGString.php"><i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGString.php</a></li>
-                                                                    </ul>
-        </div>
+				<ul class="side-nav nav nav-list">
+					<li class="nav-header">Navigation</li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGFloat.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGFloat.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGShort.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGShort.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGNode.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNode.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGLong.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGLong.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGString.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGString.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGList.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGList.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\Assets\LogBuilder.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\Assets\LogBuilder.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\Assets\LogPagesBuilder.php"><i
+							class="icon-file"></i>
+							Slothsoft\Minecraft\Assets\LogPagesBuilder.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGByteArray.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByteArray.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGDouble.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGDouble.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\Assets\StatusBuilder.php"><i
+							class="icon-file"></i>
+							Slothsoft\Minecraft\Assets\StatusBuilder.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGByte.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByte.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\LogPagesDocument.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\LogPagesDocument.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGEnd.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGEnd.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGNumber.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNumber.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGCompound.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGCompound.php</a></li>
+					<li><a href="#Slothsoft\Minecraft\NBT\TAGInt.php"><i
+							class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGInt.php</a></li>
+					<li><a href="#registerModule.php"><i class="icon-file"></i>
+							registerModule.php</a></li>
+				</ul>
+			</div>
 
-        <div class="span10 offset2">
-            <ul class="breadcrumb">
-                <li><a href="../"><i class="icon-remove-sign"></i></a><span class="divider">\</span></li>
-                <li>Compilation Errors</li>
-            </ul>
+			<div class="span10 offset2">
+				<ul class="breadcrumb">
+					<li><a href="../"><i class="icon-remove-sign"></i></a><span
+						class="divider">\</span></li>
+					<li>Compilation Errors</li>
+				</ul>
 
-            
-                            <div class="package-contents">
-                                            <a name="registerModule.php" id="registerModule.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            registerModule.php
-                            <small style="float: right;padding-right: 10px;">1</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\Assets\LogBuilder.php" id="Slothsoft\Minecraft\Assets\LogBuilder.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\Assets\LogBuilder.php
-                            <small style="float: right;padding-right: 10px;">5</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>19</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\Assets\LogBuilder</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>Argument $context is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>Argument $args is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for method buildExecutableStrategies()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\Assets\LogPagesBuilder.php" id="Slothsoft\Minecraft\Assets\LogPagesBuilder.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\Assets\LogPagesBuilder.php
-                            <small style="float: right;padding-right: 10px;">5</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>17</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\Assets\LogPagesBuilder</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>19</td>
-                                        <td>Argument $context is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>19</td>
-                                        <td>Argument $args is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>19</td>
-                                        <td>No summary for method buildExecutableStrategies()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\Assets\StatusBuilder.php" id="Slothsoft\Minecraft\Assets\StatusBuilder.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\Assets\StatusBuilder.php
-                            <small style="float: right;padding-right: 10px;">5</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>16</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\Assets\StatusBuilder</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>18</td>
-                                        <td>Argument $context is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>18</td>
-                                        <td>Argument $args is missing from the Docblock of buildExecutableStrategies</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>18</td>
-                                        <td>No summary for method buildExecutableStrategies()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\LogPagesDocument.php" id="Slothsoft\Minecraft\LogPagesDocument.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\LogPagesDocument.php
-                            <small style="float: right;padding-right: 10px;">10</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>9</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\LogPagesDocument</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>15</td>
-                                        <td>Argument $startYear is missing from the Docblock of __construct</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>15</td>
-                                        <td>Argument $startMonth is missing from the Docblock of __construct</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>15</td>
-                                        <td>Argument $endYear is missing from the Docblock of __construct</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>15</td>
-                                        <td>Argument $endMonth is missing from the Docblock of __construct</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>15</td>
-                                        <td>No summary for method __construct()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>Argument $targetDoc is missing from the Docblock of toElement</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for method toElement()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>28</td>
-                                        <td>No summary for method toDocument()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGByte.php" id="Slothsoft\Minecraft\NBT\TAGByte.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGByte.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGByte</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGByteArray.php" id="Slothsoft\Minecraft\NBT\TAGByteArray.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGByteArray.php
-                            <small style="float: right;padding-right: 10px;">6</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGByteArray</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>21</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>32</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>37</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGCompound.php" id="Slothsoft\Minecraft\NBT\TAGCompound.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGCompound.php
-                            <small style="float: right;padding-right: 10px;">6</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGCompound</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>26</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>40</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>43</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGDouble.php" id="Slothsoft\Minecraft\NBT\TAGDouble.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGDouble.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGDouble</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGEnd.php" id="Slothsoft\Minecraft\NBT\TAGEnd.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGEnd.php
-                            <small style="float: right;padding-right: 10px;">6</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGEnd</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>13</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>18</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>23</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGFloat.php" id="Slothsoft\Minecraft\NBT\TAGFloat.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGFloat.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGFloat</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGInt.php" id="Slothsoft\Minecraft\NBT\TAGInt.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGInt.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGInt</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGList.php" id="Slothsoft\Minecraft\NBT\TAGList.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGList.php
-                            <small style="float: right;padding-right: 10px;">6</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGList</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>50</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>53</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGLong.php" id="Slothsoft\Minecraft\NBT\TAGLong.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGLong.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGLong</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGNode.php" id="Slothsoft\Minecraft\NBT\TAGNode.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGNode.php
-                            <small style="float: right;padding-right: 10px;">48</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>7</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>50</td>
-                                        <td>Argument $string is missing from the Docblock of createDocument</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>50</td>
-                                        <td>No summary for method createDocument()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>61</td>
-                                        <td>Argument $offset is missing from the Docblock of parseDocument</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>61</td>
-                                        <td>Argument $namedTag is missing from the Docblock of parseDocument</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>61</td>
-                                        <td>Argument $tagType is missing from the Docblock of parseDocument</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>61</td>
-                                        <td>No summary for method parseDocument()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>76</td>
-                                        <td>Argument $tagType is missing from the Docblock of createNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>76</td>
-                                        <td>Argument $offset is missing from the Docblock of createNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>76</td>
-                                        <td>Argument $namedTag is missing from the Docblock of createNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>76</td>
-                                        <td>Argument $exlicitTagType is missing from the Docblock of createNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>76</td>
-                                        <td>No summary for method createNode()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>84</td>
-                                        <td>Argument $tagType is missing from the Docblock of instantiateNode</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>84</td>
-                                        <td>No summary for method instantiateNode()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>113</td>
-                                        <td>Argument $offset is missing from the Docblock of getFloat</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>113</td>
-                                        <td>Argument $length is missing from the Docblock of getFloat</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>113</td>
-                                        <td>No summary for method getFloat()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>188</td>
-                                        <td>Argument $offset is missing from the Docblock of getInteger</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>188</td>
-                                        <td>Argument $length is missing from the Docblock of getInteger</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>188</td>
-                                        <td>No summary for method getInteger()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>193</td>
-                                        <td>Argument $offset is missing from the Docblock of getBinary</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>193</td>
-                                        <td>Argument $length is missing from the Docblock of getBinary</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>193</td>
-                                        <td>No summary for method getBinary()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>198</td>
-                                        <td>Argument $Doc is missing from the Docblock of TAG2DOM</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>198</td>
-                                        <td>Argument $Tag is missing from the Docblock of TAG2DOM</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>198</td>
-                                        <td>No summary for method TAG2DOM()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>227</td>
-                                        <td>Argument $tagType is missing from the Docblock of __construct</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>227</td>
-                                        <td>No summary for method __construct()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>232</td>
-                                        <td>Argument $offset is missing from the Docblock of init</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>232</td>
-                                        <td>Argument $namedTag is missing from the Docblock of init</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>232</td>
-                                        <td>Argument $exlicitTagType is missing from the Docblock of init</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>232</td>
-                                        <td>No summary for method init()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>257</td>
-                                        <td>No summary for method loadName()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>262</td>
-                                        <td>No summary for method getPayloadOffset()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>274</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>276</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>288</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>290</td>
-                                        <td>Argument $name is missing from the Docblock of getElementsByName</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>290</td>
-                                        <td>No summary for method getElementsByName()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>32</td>
-                                        <td>No summary for property $document</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>No summary for property $Root</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>36</td>
-                                        <td>No summary for property $tagNames</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>225</td>
-                                        <td>No summary for property $type</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>249</td>
-                                        <td>No summary for property $offset</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>251</td>
-                                        <td>No summary for property $exlicitTagType</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>253</td>
-                                        <td>No summary for property $Name</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>255</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGNumber.php" id="Slothsoft\Minecraft\NBT\TAGNumber.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGNumber.php
-                            <small style="float: right;padding-right: 10px;">8</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGNumber</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>Argument $size is missing from the Docblock of loadPayload</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>Argument $mode is missing from the Docblock of loadPayload</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>39</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>46</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGShort.php" id="Slothsoft\Minecraft\NBT\TAGShort.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGShort.php
-                            <small style="float: right;padding-right: 10px;">3</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGShort</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                            <div class="package-contents">
-                                            <a name="Slothsoft\Minecraft\NBT\TAGString.php" id="Slothsoft\Minecraft\NBT\TAGString.php"></a>
-                        <h3>
-                            <i class="icon-file"></i>
-                            Slothsoft\Minecraft\NBT\TAGString.php
-                            <small style="float: right;padding-right: 10px;">7</small>
-                        </h3>
-                        <div>
-                            <table class="table markers table-bordered">
-                                <thead>
-                                <tr>
-                                    <th>Type</th>
-                                    <th>Line</th>
-                                    <th>Description</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>0</td>
-                                        <td>No summary was found for this file</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>5</td>
-                                        <td>No summary for class \Slothsoft\Minecraft\NBT\TAGString</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>10</td>
-                                        <td>No summary for method loadPayload()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>23</td>
-                                        <td>No summary for method getLength()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>34</td>
-                                        <td>No summary for method getValue()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>47</td>
-                                        <td>No summary for method __toString()</td>
-                                    </tr>
-                                                                    <tr>
-                                        <td>error</td>
-                                        <td>39</td>
-                                        <td>No summary for property $Payload</td>
-                                    </tr>
-                                                            </tbody>
-                            </table>
-                        </div>
-                                    </div>
-                    </div>
-    </section>
 
-    <footer class="row-fluid">
-        <section class="span10 offset2">
-            <section class="row-fluid">
-                <section class="span10 offset1">
-                    <section class="row-fluid footer-sections">
-                        <section class="span4">
-                                                        <h1><i class="icon-code"></i></h1>
-                            <div>
-                                <ul>
-                                                                            <li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
-                                                                    </ul>
-                            </div>
-                        </section>
-                        <section class="span4">
-                                                        <h1><i class="icon-bar-chart"></i></h1>
-                            <div>
-                                <ul>
-                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
-                                </ul>
-                            </div>
-                        </section>
-                        <section class="span4">
-                                                        <h1><i class="icon-pushpin"></i></h1>
-                            <div>
-                                <ul>
-                                    <li><a href="../reports/errors.html">Errors</a></li>
-                                    <li><a href="../reports/markers.html">Markers</a></li>
-                                </ul>
-                            </div>
-                        </section>
-                    </section>
-                </section>
-            </section>
-            <section class="row-fluid">
-                <section class="span10 offset1">
-                    <hr />
-                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
-                    on June 6th, 2018 at 20:05.
-                </section>
-            </section>
-        </section>
-    </footer>
-</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGFloat.php"
+						id="Slothsoft\Minecraft\NBT\TAGFloat.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGFloat.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGFloat</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGShort.php"
+						id="Slothsoft\Minecraft\NBT\TAGShort.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGShort.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGShort</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGNode.php"
+						id="Slothsoft\Minecraft\NBT\TAGNode.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNode.php <small
+							style="float: right; padding-right: 10px;">48</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>7</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>50</td>
+									<td>Argument $string is missing from the Docblock of
+										createDocument</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>50</td>
+									<td>No summary for method createDocument()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>61</td>
+									<td>Argument $offset is missing from the Docblock of
+										parseDocument</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>61</td>
+									<td>Argument $namedTag is missing from the Docblock of
+										parseDocument</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>61</td>
+									<td>Argument $tagType is missing from the Docblock of
+										parseDocument</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>61</td>
+									<td>No summary for method parseDocument()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>76</td>
+									<td>Argument $tagType is missing from the Docblock of
+										createNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>76</td>
+									<td>Argument $offset is missing from the Docblock of
+										createNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>76</td>
+									<td>Argument $namedTag is missing from the Docblock of
+										createNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>76</td>
+									<td>Argument $exlicitTagType is missing from the Docblock
+										of createNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>76</td>
+									<td>No summary for method createNode()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>84</td>
+									<td>Argument $tagType is missing from the Docblock of
+										instantiateNode</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>84</td>
+									<td>No summary for method instantiateNode()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>113</td>
+									<td>Argument $offset is missing from the Docblock of
+										getFloat</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>113</td>
+									<td>Argument $length is missing from the Docblock of
+										getFloat</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>113</td>
+									<td>No summary for method getFloat()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>188</td>
+									<td>Argument $offset is missing from the Docblock of
+										getInteger</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>188</td>
+									<td>Argument $length is missing from the Docblock of
+										getInteger</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>188</td>
+									<td>No summary for method getInteger()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>193</td>
+									<td>Argument $offset is missing from the Docblock of
+										getBinary</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>193</td>
+									<td>Argument $length is missing from the Docblock of
+										getBinary</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>193</td>
+									<td>No summary for method getBinary()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>198</td>
+									<td>Argument $Doc is missing from the Docblock of TAG2DOM</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>198</td>
+									<td>Argument $Tag is missing from the Docblock of TAG2DOM</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>198</td>
+									<td>No summary for method TAG2DOM()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>227</td>
+									<td>Argument $tagType is missing from the Docblock of
+										__construct</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>227</td>
+									<td>No summary for method __construct()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>232</td>
+									<td>Argument $offset is missing from the Docblock of init</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>232</td>
+									<td>Argument $namedTag is missing from the Docblock of
+										init</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>232</td>
+									<td>Argument $exlicitTagType is missing from the Docblock
+										of init</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>232</td>
+									<td>No summary for method init()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>257</td>
+									<td>No summary for method loadName()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>262</td>
+									<td>No summary for method getPayloadOffset()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>274</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>276</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>288</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>290</td>
+									<td>Argument $name is missing from the Docblock of
+										getElementsByName</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>290</td>
+									<td>No summary for method getElementsByName()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>32</td>
+									<td>No summary for property $document</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>34</td>
+									<td>No summary for property $Root</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>36</td>
+									<td>No summary for property $tagNames</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>225</td>
+									<td>No summary for property $type</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>249</td>
+									<td>No summary for property $offset</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>251</td>
+									<td>No summary for property $exlicitTagType</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>253</td>
+									<td>No summary for property $Name</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>255</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGLong.php"
+						id="Slothsoft\Minecraft\NBT\TAGLong.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGLong.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGLong</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGString.php"
+						id="Slothsoft\Minecraft\NBT\TAGString.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGString.php <small
+							style="float: right; padding-right: 10px;">7</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\NBT\TAGString</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>23</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>34</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>47</td>
+									<td>No summary for method __toString()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>39</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGList.php"
+						id="Slothsoft\Minecraft\NBT\TAGList.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGList.php <small
+							style="float: right; padding-right: 10px;">6</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGList</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>34</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>50</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>53</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\Assets\LogBuilder.php"
+						id="Slothsoft\Minecraft\Assets\LogBuilder.php"></a>
+					<h3>
+						<i class="icon-file"></i>
+						Slothsoft\Minecraft\Assets\LogBuilder.php <small
+							style="float: right; padding-right: 10px;">5</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>19</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\Assets\LogBuilder</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>Argument $context is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>Argument $args is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>No summary for method buildExecutableStrategies()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\Assets\LogPagesBuilder.php"
+						id="Slothsoft\Minecraft\Assets\LogPagesBuilder.php"></a>
+					<h3>
+						<i class="icon-file"></i>
+						Slothsoft\Minecraft\Assets\LogPagesBuilder.php <small
+							style="float: right; padding-right: 10px;">5</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>17</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\Assets\LogPagesBuilder</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>19</td>
+									<td>Argument $context is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>19</td>
+									<td>Argument $args is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>19</td>
+									<td>No summary for method buildExecutableStrategies()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGByteArray.php"
+						id="Slothsoft\Minecraft\NBT\TAGByteArray.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByteArray.php
+						<small style="float: right; padding-right: 10px;">6</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\NBT\TAGByteArray</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>32</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>37</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGDouble.php"
+						id="Slothsoft\Minecraft\NBT\TAGDouble.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGDouble.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\NBT\TAGDouble</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\Assets\StatusBuilder.php"
+						id="Slothsoft\Minecraft\Assets\StatusBuilder.php"></a>
+					<h3>
+						<i class="icon-file"></i>
+						Slothsoft\Minecraft\Assets\StatusBuilder.php <small
+							style="float: right; padding-right: 10px;">5</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>16</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\Assets\StatusBuilder</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>18</td>
+									<td>Argument $context is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>18</td>
+									<td>Argument $args is missing from the Docblock of
+										buildExecutableStrategies</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>18</td>
+									<td>No summary for method buildExecutableStrategies()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGByte.php"
+						id="Slothsoft\Minecraft\NBT\TAGByte.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGByte.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGByte</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\LogPagesDocument.php"
+						id="Slothsoft\Minecraft\LogPagesDocument.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\LogPagesDocument.php
+						<small style="float: right; padding-right: 10px;">10</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>9</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\LogPagesDocument</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>15</td>
+									<td>Argument $startYear is missing from the Docblock of
+										__construct</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>15</td>
+									<td>Argument $startMonth is missing from the Docblock of
+										__construct</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>15</td>
+									<td>Argument $endYear is missing from the Docblock of
+										__construct</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>15</td>
+									<td>Argument $endMonth is missing from the Docblock of
+										__construct</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>15</td>
+									<td>No summary for method __construct()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>Argument $targetDoc is missing from the Docblock of
+										toElement</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>21</td>
+									<td>No summary for method toElement()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>28</td>
+									<td>No summary for method toDocument()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGEnd.php"
+						id="Slothsoft\Minecraft\NBT\TAGEnd.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGEnd.php <small
+							style="float: right; padding-right: 10px;">6</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGEnd</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>13</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>18</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>23</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGNumber.php"
+						id="Slothsoft\Minecraft\NBT\TAGNumber.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGNumber.php <small
+							style="float: right; padding-right: 10px;">8</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\NBT\TAGNumber</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>Argument $size is missing from the Docblock of
+										loadPayload</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>Argument $mode is missing from the Docblock of
+										loadPayload</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>34</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>39</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>46</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGCompound.php"
+						id="Slothsoft\Minecraft\NBT\TAGCompound.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGCompound.php
+						<small style="float: right; padding-right: 10px;">6</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class
+										\Slothsoft\Minecraft\NBT\TAGCompound</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>26</td>
+									<td>No summary for method getLength()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>40</td>
+									<td>No summary for method getValue()</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>43</td>
+									<td>No summary for property $Payload</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="Slothsoft\Minecraft\NBT\TAGInt.php"
+						id="Slothsoft\Minecraft\NBT\TAGInt.php"></a>
+					<h3>
+						<i class="icon-file"></i> Slothsoft\Minecraft\NBT\TAGInt.php <small
+							style="float: right; padding-right: 10px;">3</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>5</td>
+									<td>No summary for class \Slothsoft\Minecraft\NBT\TAGInt</td>
+								</tr>
+								<tr>
+									<td>error</td>
+									<td>10</td>
+									<td>No summary for method loadPayload()</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="package-contents">
+					<a name="registerModule.php" id="registerModule.php"></a>
+					<h3>
+						<i class="icon-file"></i> registerModule.php <small
+							style="float: right; padding-right: 10px;">1</small>
+					</h3>
+					<div>
+						<table class="table markers table-bordered">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Line</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>error</td>
+									<td>0</td>
+									<td>No summary was found for this file</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="row-fluid">
+			<section class="span10 offset2">
+				<section class="row-fluid">
+					<section class="span10 offset1">
+						<section class="row-fluid footer-sections">
+							<section class="span4">
+								<h1>
+									<i class="icon-code"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../namespaces/Slothsoft.html">\Slothsoft</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="span4">
+								<h1>
+									<i class="icon-bar-chart"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../graphs/class.html">Class Hierarchy
+												Diagram</a></li>
+									</ul>
+								</div>
+							</section>
+							<section class="span4">
+								<h1>
+									<i class="icon-pushpin"></i>
+								</h1>
+								<div>
+									<ul>
+										<li><a href="../reports/errors.html">Errors</a></li>
+										<li><a href="../reports/markers.html">Markers</a></li>
+									</ul>
+								</div>
+							</section>
+						</section>
+					</section>
+				</section>
+				<section class="row-fluid">
+					<section class="span10 offset1">
+						<hr />
+						Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor
+						</a> and authored on June 23rd, 2018 at 18:11.
+					</section>
+				</section>
+			</section>
+		</footer>
+	</div>
 
 </body>
 </html>
