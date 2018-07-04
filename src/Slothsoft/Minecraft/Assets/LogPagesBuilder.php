@@ -6,7 +6,7 @@ use Slothsoft\Farah\FarahUrl\FarahUrlArguments;
 use Slothsoft\Farah\Module\Asset\AssetInterface;
 use Slothsoft\Farah\Module\Asset\ExecutableBuilderStrategy\ExecutableBuilderStrategyInterface;
 use Slothsoft\Farah\Module\Executable\ExecutableStrategies;
-use Slothsoft\Farah\Module\Executable\ResultBuilderStrategy\DOMWriterResultBuilder;
+use Slothsoft\Farah\Module\Executable\ResultBuilderStrategy\ChunkWriterResultBuilder;
 use Slothsoft\Minecraft\LogPagesDocument;
 
 /**
@@ -28,7 +28,7 @@ class LogPagesBuilder implements ExecutableBuilderStrategyInterface
         
         $writer = new LogPagesDocument($startYear, $startMonth, $endYear, $endMonth);
         
-        return new ExecutableStrategies(new DOMWriterResultBuilder($writer));
+        return new ExecutableStrategies(new ChunkWriterResultBuilder($writer, 'sites.log.xml'));
     }
 }
 
