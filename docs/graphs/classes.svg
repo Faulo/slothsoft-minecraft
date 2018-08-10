@@ -195,15 +195,15 @@
 <polygon fill="none" stroke="black" points="1091.04,-158 966.038,-158 966.038,-122 1091.04,-122 1091.04,-158"/>
 <text text-anchor="middle" x="1028.54" y="-137.2" font-family="Courier,monospace" font-size="11.00">LogPagesDocument</text>
 </g>
-<!-- \\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface -->
-<g id="node19" class="node"><title>\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface</title>
-<ellipse fill="none" stroke="black" cx="545.019" cy="-18" rx="190.366" ry="18"/>
-<text text-anchor="middle" x="545.019" y="-14.3" font-family="Times New Roman,serif" font-size="14.00" fill="gray">\Slothsoft\Core\IO\Writable\DOMWriterInterface</text>
+<!-- \\Slothsoft\\Core\\IO\\Writable\\ChunkWriterInterface -->
+<g id="node19" class="node"><title>\\Slothsoft\\Core\\IO\\Writable\\ChunkWriterInterface</title>
+<ellipse fill="none" stroke="black" cx="545.019" cy="-18" rx="193.066" ry="18"/>
+<text text-anchor="middle" x="545.019" y="-14.3" font-family="Times New Roman,serif" font-size="14.00" fill="gray">\Slothsoft\Core\IO\Writable\ChunkWriterInterface</text>
 </g>
-<!-- \\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface -->
-<g id="edge12" class="edge"><title>\\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\DOMWriterInterface</title>
-<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1009.13,-121.808C985.004,-99.2654 940.301,-61.78 894.038,-45 845.97,-27.5652 791.782,-18.6901 740.73,-14.6262"/>
-<polygon fill="none" stroke="black" points="740.795,-11.1215 730.564,-13.8764 740.28,-18.1026 740.795,-11.1215"/>
+<!-- \\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\ChunkWriterInterface -->
+<g id="edge12" class="edge"><title>\\Slothsoft\\Minecraft\\LogPagesDocument&#45;&gt;\\Slothsoft\\Core\\IO\\Writable\\ChunkWriterInterface</title>
+<path fill="none" stroke="black" stroke-dasharray="1,5" d="M1009.13,-121.808C985.004,-99.2654 940.301,-61.78 894.038,-45 846.904,-27.9042 793.887,-19.0385 743.712,-14.8687"/>
+<polygon fill="none" stroke="black" points="743.957,-11.3774 733.717,-14.0964 743.418,-18.3565 743.957,-11.3774"/>
 </g>
 </g>
 </svg>
