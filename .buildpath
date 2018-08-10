@@ -65,7 +65,7 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-	<buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-farah"/>
+	
 	<buildpathentry kind="src" path="vendor/theseer/tokenizer/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
@@ -117,7 +117,7 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-	<buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-core"/>
+	
 	<buildpathentry kind="src" path="vendor/phpunit/phpunit/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
@@ -148,7 +148,7 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-	<buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-chat"/>
+	
 	<buildpathentry kind="src" path="src">
 		<attributes>
 			<attribute name="composer" value="source"/>
@@ -199,4 +199,4 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-</buildpath>
+<buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-chat"/><buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-core"/><buildpathentry combineaccessrules="false" kind="prj" path="/slothsoft-farah"/></buildpath>
