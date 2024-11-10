@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<assets xmlns="http://schema.slothsoft.net/farah/module">
-	<resource-directory name="css" type="text/css"/>
-	<resource-directory name="js" type="application/javascript"/>
-	<resource-directory name="xsl" type="application/xslt+xml"/>
+<assets xmlns="http://schema.slothsoft.net/farah/module" version="1.1">
+	<resource-directory name="css" type="text/css" />
+	<resource-directory name="js" type="application/javascript" />
+	<resource-directory name="xsl" type="application/xslt+xml" />
 
-	<resource-directory name="dictionary" path="dictionary" type="application/xml"/>
+	<resource-directory name="dictionary" path="dictionary" type="application/xml" />
 	<fragment name="data">
-		<fragment name="pics-upload"/>
-		<custom-asset name="log" executable-builder="Slothsoft\Minecraft\Assets\LogBuilder"/>
-		<custom-asset name="status" executable-builder="Slothsoft\Minecraft\Assets\StatusBuilder"/>
-		<custom-asset name="sites.log" executable-builder="Slothsoft\Minecraft\Assets\LogPagesBuilder"/>
+		<fragment name="pics-upload" />
+		<custom-asset name="log" executable-builder="Slothsoft\Minecraft\Assets\LogBuilder" />
+		<custom-asset name="status" executable-builder="Slothsoft\Minecraft\Assets\StatusBuilder" />
+		<custom-asset name="sites.log" executable-builder="Slothsoft\Minecraft\Assets\LogPagesBuilder" />
 	</fragment>
 
 
@@ -17,232 +17,232 @@
 
 
 	<directory name="static">
-		<resource name="news" path="news.xml" type="application/xml"/>
-		<resource name="tectonicus" path="tectonicus/index.html" type="text/html"/>
-		<resource name="tectonicus" path="tectonicus_old/index.html" type="text/html"/>
-		<resource name="log" path="log.xml" type="application/xml"/>
-		<resource-directory name="log" path="log" type="application/xml"/>
-		<resource name="players-faulo" path="players/Faulo" type="application/x-nbt"/>
-		<resource-directory name="players" path="C:\Minecraft\players" type="application/x-nbt"/>
-		<resource name="map-mcr" path="r.0.0.mcr" type="application/x-mcr"/>
-		<resource name="map-mca" path="r.-1.-1.mca" type="application/x-mca"/>
+		<resource name="news" path="news.xml" type="application/xml" />
+		<resource name="tectonicus" path="tectonicus/index.html" type="text/html" />
+		<resource name="tectonicus" path="tectonicus_old/index.html" type="text/html" />
+		<resource name="log" path="log.xml" type="application/xml" />
+		<resource-directory name="log" path="log" type="application/xml" />
+		<resource name="players-faulo" path="players/Faulo" type="application/x-nbt" />
+		<resource-directory name="players" path="C:\Minecraft\players" type="application/x-nbt" />
+		<resource name="map-mcr" path="r.0.0.mcr" type="application/x-mcr" />
+		<resource name="map-mca" path="r.-1.-1.mca" type="application/x-mca" />
 		<resource name="hardware" path="hardware.txt" type="text/csv">
-			<options del="=" sep="" cols="2" output="assoc"/>
+			<options del="=" sep="" cols="2" output="assoc" />
 		</resource>
 		<resource name="server" path="server.txt" type="text/csv">
-			<options del="=" sep="" cols="2" output="assoc"/>
+			<options del="=" sep="" cols="2" output="assoc" />
 		</resource>
 		<resource name="info" path="info.txt" type="text/csv">
-			<options del=":" sep="" cols="2" output="assoc"/>
+			<options del=":" sep="" cols="2" output="assoc" />
 		</resource>
-		<resource name="map-2D-n" path="maps/Map.2D.normal.png" type="image/png"/>
-		<resource name="map-3D-n" path="maps/Map.3D.normal.png" type="image/png"/>
-		<resource name="map-2D-c" path="maps/Map.2D.cave.png" type="image/png"/>
-		<resource name="map-3D-c" path="maps/Map.3D.cave.png" type="image/png"/>
-		<resource name="heart.0" path="heart.0.svg" type="image/svg+xml"/>
-		<resource name="heart.1" path="heart.1.svg" type="image/svg+xml"/>
-		<resource name="heart.2" path="heart.2.svg" type="image/svg+xml"/>
-		<resource name="food.0" path="food.0.svg" type="image/svg+xml"/>
-		<resource name="food.1" path="food.1.svg" type="image/svg+xml"/>
-		<resource name="food.2" path="food.2.svg" type="image/svg+xml"/>
-		<resource-directory name="maps" path="maps" type="image/png"/>
-		<resource-directory name="blocks" path="blocks" type="image/png"/>
-		<resource-directory name="pics" path="pictures" type="image/*"/>
-		<resource name="chunks" path="chunks.json" type="application/json"/>
-		<resource name="craft" path="craft.json" type="application/json"/>
-		<resource name="ids" path="ids.json" type="application/json"/>
-		<resource name="import" path="import.json" type="application/json"/>
-		<resource name="mapping" path="mapping.json" type="application/json"/>
-		<resource name="trade" path="trade.json" type="application/json"/>
-		<resource name="waypoints" path="waypoints.json" type="application/json"/>
+		<resource name="map-2D-n" path="maps/Map.2D.normal.png" type="image/png" />
+		<resource name="map-3D-n" path="maps/Map.3D.normal.png" type="image/png" />
+		<resource name="map-2D-c" path="maps/Map.2D.cave.png" type="image/png" />
+		<resource name="map-3D-c" path="maps/Map.3D.cave.png" type="image/png" />
+		<resource name="heart.0" path="heart.0.svg" type="image/svg+xml" />
+		<resource name="heart.1" path="heart.1.svg" type="image/svg+xml" />
+		<resource name="heart.2" path="heart.2.svg" type="image/svg+xml" />
+		<resource name="food.0" path="food.0.svg" type="image/svg+xml" />
+		<resource name="food.1" path="food.1.svg" type="image/svg+xml" />
+		<resource name="food.2" path="food.2.svg" type="image/svg+xml" />
+		<resource-directory name="maps" path="maps" type="image/png" />
+		<resource-directory name="blocks" path="blocks" type="image/png" />
+		<resource-directory name="pics" path="pictures" type="image/*" />
+		<resource name="chunks" path="chunks.json" type="application/json" />
+		<resource name="craft" path="craft.json" type="application/json" />
+		<resource name="ids" path="ids.json" type="application/json" />
+		<resource name="import" path="import.json" type="application/json" />
+		<resource name="mapping" path="mapping.json" type="application/json" />
+		<resource name="trade" path="trade.json" type="application/json" />
+		<resource name="waypoints" path="waypoints.json" type="application/json" />
 	</directory>
 	<fragment name="home">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
 		<fragment name="content">
-			<use-template ref="/xsl/home"/>
-			<import ref="//slothsoft@core/api/DOM"/>
-			<use-document ref="//farah/sites" name="sites"/>
-			<use-document ref="/static/news" name="news"/>
-			<use-document ref="/log-wrapper" name="log"/>
-			<use-document ref="//slothsoft@chat/default" name="chat-short"/>
+			<use-template ref="/xsl/home" />
+			<import ref="//slothsoft@core/api/DOM" />
+			<use-document ref="//farah/sites" name="sites" />
+			<use-document ref="/static/news" name="news" />
+			<use-document ref="/log-wrapper" name="log" />
+			<use-document ref="//slothsoft@chat/default" name="chat-short" />
 		</fragment>
 	</fragment>
 	<fragment name="chat">
-		<param name="chat-database" value=""/>
-		<param name="chat-duration" value="7"/>
-		<use-template ref="//slothsoft@chat/xsl/shoutbox"/>
-		<use-document ref="//slothsoft@chat/default" name="chat"/>
+		<param name="chat-database" value="" />
+		<param name="chat-duration" value="7" />
+		<use-template ref="//slothsoft@chat/xsl/shoutbox" />
+		<use-document ref="//slothsoft@chat/default" name="chat" />
 	</fragment>
 	<fragment name="news">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
 		<fragment name="content">
-			<use-template ref="/xsl/news"/>
-			<use-document ref="/static/news" name="news"/>
+			<use-template ref="/xsl/news" />
+			<use-document ref="/static/news" name="news" />
 		</fragment>
 	</fragment>
 	<fragment name="log">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/log-wrapper" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/log-wrapper" name="content" />
 	</fragment>
 	<fragment name="archive">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="//slothsoft@chat/archive" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="//slothsoft@chat/archive" name="content" />
 	</fragment>
 	<fragment name="log-wrapper">
-		<use-template ref="/xsl/log"/>
-		<use-document ref="/log-content" name="log-content"/>
+		<use-template ref="/xsl/log" />
+		<use-document ref="/log-content" name="log-content" />
 	</fragment>
 	<fragment name="log-content">
-		<use-template ref="/xsl/log.content"/>
-		<use-document ref="/data/log" name="log"/>
-		<use-document ref="/data/status" name="status"/>
+		<use-template ref="/xsl/log.content" />
+		<use-document ref="/data/log" name="log" />
+		<use-document ref="/data/status" name="status" />
 	</fragment>
 	<fragment name="shoutbox">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="//slothsoft@chat/default" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="//slothsoft@chat/default" name="content" />
 	</fragment>
 	<fragment name="maps">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/maps-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/maps-content" name="content" />
 	</fragment>
 	<fragment name="map-2D-normal">
-		<import ref="/map"/>
-		<use-document ref="/static/map-2D-n" name="map"/>
+		<import ref="/map" />
+		<use-document ref="/static/map-2D-n" name="map" />
 	</fragment>
 	<fragment name="map-3D-normal">
-		<import ref="/map"/>
-		<use-document ref="/static/map-3D-n" name="map"/>
+		<import ref="/map" />
+		<use-document ref="/static/map-3D-n" name="map" />
 	</fragment>
 	<fragment name="map-2D-cave">
-		<import ref="/map"/>
-		<use-document ref="/static/map-2D-c" name="map"/>
+		<import ref="/map" />
+		<use-document ref="/static/map-2D-c" name="map" />
 	</fragment>
 	<fragment name="map-3D-cave">
-		<import ref="/map"/>
-		<use-document ref="/static/map-3D-c" name="map"/>
+		<import ref="/map" />
+		<use-document ref="/static/map-3D-c" name="map" />
 	</fragment>
 	<fragment name="infos">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/infos-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/infos-content" name="content" />
 	</fragment>
 	<fragment name="statistic">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/statistic-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/statistic-content" name="content" />
 	</fragment>
 	<fragment name="law">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/law-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/law-content" name="content" />
 	</fragment>
 	<fragment name="mall">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/mall-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/mall-content" name="content" />
 	</fragment>
 	<fragment name="workshop">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/workshop-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/workshop-content" name="content" />
 	</fragment>
 	<fragment name="players">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/players-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/players-content" name="content" />
 	</fragment>
 	<fragment name="pics">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/pics-content" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/pics-content" name="content" />
 	</fragment>
 	<fragment name="mapTest">
-		<import ref="/api/default"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="/static/map-mca" name="content"/>
+		<import ref="/api/default" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="/static/map-mca" name="content" />
 	</fragment>
 	<fragment name="status">
-		<use-template ref="/xsl/status"/>
-		<import ref="//slothsoft@core/api/DOM"/>
-		<use-document ref="/data/status" name="status"/>
+		<use-template ref="/xsl/status" />
+		<import ref="//slothsoft@core/api/DOM" />
+		<use-document ref="/data/status" name="status" />
 	</fragment>
 	<fragment name="maps-content">
-		<use-template ref="/xsl/maps"/>
-		<use-document ref="/static/maps" name="maps"/>
+		<use-template ref="/xsl/maps" />
+		<use-document ref="/static/maps" name="maps" />
 	</fragment>
 	<fragment name="infos-content">
-		<use-template ref="/xsl/infos"/>
-		<use-document ref="/static/hardware" name="hardware"/>
-		<use-document ref="/static/server" name="server"/>
+		<use-template ref="/xsl/infos" />
+		<use-document ref="/static/hardware" name="hardware" />
+		<use-document ref="/static/server" name="server" />
 	</fragment>
 	<fragment name="statistic-content">
-		<use-template ref="/xsl/infos"/>
-		<use-document ref="/static/info" name="info"/>
-		<use-document ref="/static/mapping" name="mapping"/>
+		<use-template ref="/xsl/infos" />
+		<use-document ref="/static/info" name="info" />
+		<use-document ref="/static/mapping" name="mapping" />
 	</fragment>
 	<fragment name="law-content">
-		<use-template ref="/xsl/law"/>
+		<use-template ref="/xsl/law" />
 	</fragment>
 	<fragment name="mall-content">
-		<use-template ref="/xsl/mall"/>
-		<use-document ref="/static/trade" name="trade"/>
+		<use-template ref="/xsl/mall" />
+		<use-document ref="/static/trade" name="trade" />
 	</fragment>
 	<fragment name="workshop-content">
-		<use-template ref="/xsl/workshop"/>
-		<use-document ref="/static/craft" name="craft"/>
+		<use-template ref="/xsl/workshop" />
+		<use-document ref="/static/craft" name="craft" />
 	</fragment>
 	<fragment name="players-content">
-		<use-template ref="/xsl/players"/>
-		<use-document ref="/static/players" name="players"/>
-		<use-document ref="/static/heart.0" name="heart.0"/>
-		<use-document ref="/static/heart.1" name="heart.1"/>
-		<use-document ref="/static/heart.2" name="heart.2"/>
-		<use-document ref="/static/food.0" name="food.0"/>
-		<use-document ref="/static/food.1" name="food.1"/>
-		<use-document ref="/static/food.2" name="food.2"/>
+		<use-template ref="/xsl/players" />
+		<use-document ref="/static/players" name="players" />
+		<use-document ref="/static/heart.0" name="heart.0" />
+		<use-document ref="/static/heart.1" name="heart.1" />
+		<use-document ref="/static/heart.2" name="heart.2" />
+		<use-document ref="/static/food.0" name="food.0" />
+		<use-document ref="/static/food.1" name="food.1" />
+		<use-document ref="/static/food.2" name="food.2" />
 	</fragment>
 	<fragment name="pics-content">
-		<use-template ref="/xsl/pics"/>
-		<use-document ref="/data/pics-upload" name="pics-upload"/>
-		<use-document ref="/static/pics" name="pics"/>
+		<use-template ref="/xsl/pics" />
+		<use-document ref="/data/pics-upload" name="pics-upload" />
+		<use-document ref="/static/pics" name="pics" />
 	</fragment>
 	<fragment name="map">
-		<use-template ref="/xsl/_map"/>
-		<link-stylesheet ref="//slothsoft@slothsoft/css/default"/>
-		<link-stylesheet ref="//slothsoft@slothsoft/css/layout"/>
-		<link-stylesheet ref="//slothsoft@slothsoft/css/fonts"/>
-		<link-stylesheet ref="//slothsoft@slothsoft/css/colors"/>
-		<link-stylesheet ref="/css/default"/>
-		<use-document ref="//slothsoft@slothsoft/navi" name="navi"/>
-		<use-document ref="//slothsoft@slothsoft/validator" name="validator"/>
-		<use-document ref="//slothsoft@slothsoft/dict.select" name="dict.select"/>
+		<use-template ref="/xsl/_map" />
+		<link-stylesheet ref="//slothsoft@slothsoft/css/default" />
+		<link-stylesheet ref="//slothsoft@slothsoft/css/layout" />
+		<link-stylesheet ref="//slothsoft@slothsoft/css/fonts" />
+		<link-stylesheet ref="//slothsoft@slothsoft/css/colors" />
+		<link-stylesheet ref="/css/default" />
+		<use-document ref="//slothsoft@slothsoft/navi" name="navi" />
+		<use-document ref="//slothsoft@slothsoft/validator" name="validator" />
+		<use-document ref="//slothsoft@slothsoft/dict.select" name="dict.select" />
 	</fragment>
 	<fragment name="default">
-		<import ref="//slothsoft/default"/>
-		<use-document ref="/status" name="status"/>
+		<import ref="//slothsoft/default" />
+		<use-document ref="/status" name="status" />
 	</fragment>
 
 	<fragment name="api">
 		<fragment name="default">
-			<use-document ref="/status" name="status"/>
-			<link-stylesheet ref="/css/default"/>
+			<use-document ref="/status" name="status" />
+			<link-stylesheet ref="/css/default" />
 		</fragment>
 	</fragment>
 
 	<fragment name="html">
 		<fragment name="home">
-			<import ref="/api/default"/>
-			<use-template ref="/xsl/home"/>
-			<import ref="//slothsoft@core/api/DOM"/>
-			<use-document ref="//farah/sites" name="sites"/>
-			<use-document ref="/static/news" name="news"/>
-			<use-document ref="/log-wrapper" name="log"/>
+			<import ref="/api/default" />
+			<use-template ref="/xsl/home" />
+			<import ref="//slothsoft@core/api/DOM" />
+			<use-document ref="//farah/sites" name="sites" />
+			<use-document ref="/static/news" name="news" />
+			<use-document ref="/log-wrapper" name="log" />
 		</fragment>
 	</fragment>
 </assets>
