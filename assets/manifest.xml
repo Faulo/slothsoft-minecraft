@@ -65,14 +65,14 @@
 			<use-document ref="//farah/sites" name="sites" />
 			<use-document ref="/static/news" name="news" />
 			<use-document ref="/log-wrapper" name="log" />
-			<use-document ref="//slothsoft@chat/default" name="chat-short" />
+			<use-document ref="//slothsoft@chat/api/shoutbox" name="chat-short" />
 		</fragment>
 	</fragment>
 	<fragment name="chat">
 		<param name="chat-database" value="" />
 		<param name="chat-duration" value="7" />
 		<use-template ref="//slothsoft@chat/xsl/shoutbox" />
-		<use-document ref="//slothsoft@chat/default" name="chat" />
+		<use-document ref="//slothsoft@chat/api/form" name="form" />
 	</fragment>
 	<fragment name="news">
 		<import ref="/api/default" />
