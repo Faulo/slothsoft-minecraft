@@ -13,11 +13,9 @@ use Slothsoft\Farah\Module\Executable\ResultBuilderStrategy\NullResultBuilder;
  * @author Daniel Schulz
  *        
  */
-class StatusBuilder implements ExecutableBuilderStrategyInterface
-{
-
-    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
-    {
+class StatusBuilder implements ExecutableBuilderStrategyInterface {
+    
+    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies {
         return new ExecutableStrategies(new NullResultBuilder());
     }
 }

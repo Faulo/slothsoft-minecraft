@@ -16,11 +16,9 @@ use DOMElement;
  * @author Daniel Schulz
  *        
  */
-class LogBuilder implements ExecutableBuilderStrategyInterface
-{
-
-    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
-    {
+class LogBuilder implements ExecutableBuilderStrategyInterface {
+    
+    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies {
         $writer = function (DOMDocument $targetDoc): DOMElement {
             return $targetDoc->createElement('log');
         };

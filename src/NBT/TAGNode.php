@@ -4,35 +4,34 @@ namespace Slothsoft\Minecraft\NBT;
 
 use DOMDocument;
 
-abstract class TAGNode
-{
-
+abstract class TAGNode {
+    
     const TYPE_END = 0;
-
+    
     const TYPE_BYTE = 1;
-
+    
     const TYPE_SHORT = 2;
-
+    
     const TYPE_INT = 3;
-
+    
     const TYPE_LONG = 4;
-
+    
     const TYPE_FLOAT = 5;
-
+    
     const TYPE_DOUBLE = 6;
-
+    
     const TYPE_BYTEARRAY = 7;
-
+    
     const TYPE_STRING = 8;
-
+    
     const TYPE_LIST = 9;
-
+    
     const TYPE_COMPOUND = 10;
-
+    
     public static $document = '';
-
+    
     public static $Root;
-
+    
     public static $tagNames = array(
         0 => 'end',
         1 => 'byte',
@@ -46,9 +45,8 @@ abstract class TAGNode
         9 => 'list',
         10 => 'compound'
     );
-
-    public static function createDocument($string)
-    {
+    
+    public static function createDocument($string) {
         @$try = gzinflate(substr($string, 10, - 8));
         if (is_string($try)) {
             $string = $try;
@@ -57,9 +55,8 @@ abstract class TAGNode
         self::$Root = self::parseDocument();
         return self::$Root;
     }
-
-    public static function parseDocument($offset = 0, $namedTag = true, $tagType = null)
-    {
+    
+    public static function parseDocument($offset = 0, $namedTag = true, $tagType = null) {
         $offset = (int) $offset;
         if ($tagType === null) {
             $tagType = self::getInteger($offset, 1);
@@ -72,17 +69,15 @@ abstract class TAGNode
         $Node = self::createNode($tagType, $offset, $namedTag, $exlicitTagType);
         return $Node;
     }
-
-    public static function createNode($tagType, $offset, $namedTag = false, $exlicitTagType = false)
-    {
+    
+    public static function createNode($tagType, $offset, $namedTag = false, $exlicitTagType = false) {
         if ($node = self::instantiateNode($tagType)) {
             $node->init($offset, $namedTag, $exlicitTagType);
             return $node;
         }
     }
-
-    protected static function instantiateNode($tagType)
-    {
+    
+    protected static function instantiateNode($tagType) {
         switch ($tagType) {
             case self::TYPE_END:
                 return new TAGEnd($tagType);
@@ -109,9 +104,8 @@ abstract class TAGNode
         }
         return null;
     }
-
-    public static function getFloat($offset, $length)
-    {
+    
+    public static function getFloat($offset, $length) {
         $bin = self::getBinary($offset, $length);
         
         $str = '';
@@ -184,19 +178,16 @@ abstract class TAGNode
         
         return $int;
     }
-
-    public static function getInteger($offset, $length)
-    {
+    
+    public static function getInteger($offset, $length) {
         return hexdec(bin2hex(self::getBinary($offset, $length)));
     }
-
-    public static function getBinary($offset, $length)
-    {
+    
+    public static function getBinary($offset, $length) {
         return substr(self::$document, $offset, $length);
     }
-
-    public static function TAG2DOM(DOMDocument $Doc, TAGNode $Tag)
-    {
+    
+    public static function TAG2DOM(DOMDocument $Doc, TAGNode $Tag) {
         $tag = self::$tagNames[$Tag->type];
         // my_dump($tag);
         $Node = $Doc->createElement($tag);
@@ -221,16 +212,14 @@ abstract class TAGNode
         
         return $Node;
     }
-
+    
     protected $type;
-
-    public function __construct($tagType)
-    {
+    
+    public function __construct($tagType) {
         $this->type = $tagType;
     }
-
-    public function init($offset = null, $namedTag = false, $exlicitTagType = false)
-    {
+    
+    public function init($offset = null, $namedTag = false, $exlicitTagType = false) {
         if ($offset !== null) {
             
             $this->offset = (int) $offset;
@@ -245,22 +234,20 @@ abstract class TAGNode
             $this->loadPayload();
         }
     }
-
+    
     public $offset = 0;
-
+    
     public $exlicitTagType = false;
-
+    
     public $Name = null;
-
+    
     public $Payload = array();
-
-    public function loadName()
-    {
+    
+    public function loadName() {
         $this->Name = self::createNode(self::TYPE_STRING, $this->offset + 1);
     }
-
-    public function getPayloadOffset()
-    {
+    
+    public function getPayloadOffset() {
         $offset = $this->offset + (int) $this->exlicitTagType;
         
         if ($this->Name) {
@@ -270,11 +257,10 @@ abstract class TAGNode
         
         return $offset;
     }
-
+    
     public abstract function loadPayload();
-
-    public function getLength()
-    {
+    
+    public function getLength() {
         $length = (int) $this->exlicitTagType;
         
         if ($this->Name) {
@@ -284,11 +270,10 @@ abstract class TAGNode
         
         return $length;
     }
-
+    
     public abstract function getValue();
-
-    public function getElementsByName($name)
-    {
+    
+    public function getElementsByName($name) {
         $ret = array();
         if ($this->Name . '' === $name) {
             $ret[] = $this;

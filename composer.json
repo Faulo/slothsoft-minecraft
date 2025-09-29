@@ -18,11 +18,11 @@
 		"phpunit/phpunit" : "8.5.*"
 	},
 	"autoload" : {
-		"psr-0" : {
+		"psr-4" : {
 			"Slothsoft\\Minecraft\\" : "src/"
 		},
 		"files" : [
-			"src/registerModule.php"
+			"src/bootstrap.php"
 		]
 	},
 	"keywords" : [
@@ -31,9 +31,9 @@
 		"docs"
 	],
 	"autoload-dev" : {
-		"classmap" : [
-			"tests/"
-		]
+		"psr-4" : {
+			"Slothsoft\\Minecraft\\" : "src/"
+		}
 	},
 	"homepage" : "http://farah.slothsoft.net/modules/minecraft"
 }

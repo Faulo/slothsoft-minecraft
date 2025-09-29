@@ -5,26 +5,24 @@ namespace Slothsoft\Minecraft;
 use Slothsoft\Core\IO\Writable\ChunkWriterInterface;
 use Generator;
 
-class LogPagesDocument implements ChunkWriterInterface
-{
+class LogPagesDocument implements ChunkWriterInterface {
+    
     private $startYear;
-
+    
     private $startMonth;
-
+    
     private $endYear;
-
+    
     private $endMonth;
-
-    public function __construct(int $startYear, int $startMonth, int $endYear, int $endMonth)
-    {
+    
+    public function __construct(int $startYear, int $startMonth, int $endYear, int $endMonth) {
         $this->startYear = $startYear;
         $this->startMonth = $startMonth;
         $this->endYear = $endYear;
         $this->endMonth = $endMonth;
     }
-
-    public function toChunks(): Generator
-    {
+    
+    public function toChunks(): Generator {
         yield '<sitemap version="1.0" xmlns="http://schema.slothsoft.net/farah/sitemap" xmlns:sfm="http://schema.slothsoft.net/farah/module">';
         
         for ($year = $this->endYear; $year >= $this->startYear; $year --) {

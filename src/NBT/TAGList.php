@@ -2,13 +2,11 @@
 declare(strict_types = 1);
 namespace Slothsoft\Minecraft\NBT;
 
-class TAGList extends TAGNode
-{
-
+class TAGList extends TAGNode {
+    
     const TYPE = 9;
-
-    public function loadPayload()
-    {
+    
+    public function loadPayload() {
         $offset = $this->getPayloadOffset();
         
         $this->Payload['tag_id'] = self::createNode(self::TYPE_BYTE, $offset);
@@ -30,9 +28,8 @@ class TAGList extends TAGNode
             $offset += $NewChild->getLength();
         }
     }
-
-    public function getLength()
-    {
+    
+    public function getLength() {
         $length = parent::getLength();
         
         $length += $this->Payload['tag_id']->getLength();
@@ -46,10 +43,9 @@ class TAGList extends TAGNode
         
         return $length;
     }
-
-    public function getValue()
-    {}
-
+    
+    public function getValue() {}
+    
     public $Payload = array(
         
         'tag_id' => null,
@@ -59,6 +55,5 @@ class TAGList extends TAGNode
         'childs' => array()
         
         // 'A sequential list of Tags (not Named Tags), of type <typeId>. The length of this array is <length> Tags'
-    
     );
 }

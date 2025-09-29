@@ -14,11 +14,9 @@ use Slothsoft\Minecraft\LogPagesDocument;
  * @author Daniel Schulz
  *        
  */
-class LogPagesBuilder implements ExecutableBuilderStrategyInterface
-{
-
-    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies
-    {
+class LogPagesBuilder implements ExecutableBuilderStrategyInterface {
+    
+    public function buildExecutableStrategies(AssetInterface $context, FarahUrlArguments $args): ExecutableStrategies {
         $startYear = 2010;
         $startMonth = 12;
         

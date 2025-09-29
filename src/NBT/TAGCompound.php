@@ -2,13 +2,11 @@
 declare(strict_types = 1);
 namespace Slothsoft\Minecraft\NBT;
 
-class TAGCompound extends TAGNode
-{
-
+class TAGCompound extends TAGNode {
+    
     const TYPE = 10;
-
-    public function loadPayload()
-    {
+    
+    public function loadPayload() {
         $offset = $this->getPayloadOffset();
         
         do {
@@ -22,9 +20,8 @@ class TAGCompound extends TAGNode
         
         $this->Payload['end'] = array_pop($this->Payload['childs']);
     }
-
-    public function getLength()
-    {
+    
+    public function getLength() {
         $length = parent::getLength();
         
         $length += $this->Payload['end']->getLength();
@@ -36,10 +33,9 @@ class TAGCompound extends TAGNode
         
         return $length;
     }
-
-    public function getValue()
-    {}
-
+    
+    public function getValue() {}
+    
     public $Payload = array(
         
         'childs' => array(),
@@ -48,7 +44,6 @@ class TAGCompound extends TAGNode
         
         // 'A sequential list of Named Tags. This array keeps going until a TAGEnd is found',
         
-    // 'TAGEnd end'
-    
+        // 'TAGEnd end'
     );
 }

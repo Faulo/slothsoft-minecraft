@@ -2,13 +2,11 @@
 declare(strict_types = 1);
 namespace Slothsoft\Minecraft\NBT;
 
-class TAGByteArray extends TAGNode
-{
-
+class TAGByteArray extends TAGNode {
+    
     const TYPE = 7;
-
-    public function loadPayload()
-    {
+    
+    public function loadPayload() {
         $offset = $this->getPayloadOffset();
         
         $this->Payload['length'] = self::createNode(self::TYPE_INT, $offset);
@@ -17,9 +15,8 @@ class TAGByteArray extends TAGNode
         
         $this->Payload['bytes'] = self::getBinary($offset, $this->Payload['length']->getValue());
     }
-
-    public function getLength()
-    {
+    
+    public function getLength() {
         $length = parent::getLength();
         
         $length += $this->Payload['length']->getLength();
@@ -28,18 +25,16 @@ class TAGByteArray extends TAGNode
         
         return $length;
     }
-
-    public function getValue()
-    {
+    
+    public function getValue() {
         return $this->Payload['bytes'];
     }
-
+    
     public $Payload = array(
         
         'length' => null,
         
         'bytes' => ''
-    
     );
 } 
 
