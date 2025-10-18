@@ -35,10 +35,12 @@
 		<resource name="info" path="info.txt" type="text/csv">
 			<options del=":" sep="" cols="2" output="assoc" />
 		</resource>
+		<!--
 		<resource name="map-2D-n" path="maps/Map.2D.normal.png" type="image/png" />
 		<resource name="map-3D-n" path="maps/Map.3D.normal.png" type="image/png" />
 		<resource name="map-2D-c" path="maps/Map.2D.cave.png" type="image/png" />
 		<resource name="map-3D-c" path="maps/Map.3D.cave.png" type="image/png" />
+		-->
 		<resource name="heart.0" path="heart.0.svg" type="image/svg+xml" />
 		<resource name="heart.1" path="heart.1.svg" type="image/svg+xml" />
 		<resource name="heart.2" path="heart.2.svg" type="image/svg+xml" />
@@ -214,6 +216,7 @@
 	</fragment>
 	<fragment name="map">
 		<use-template ref="/xsl/_map" />
+		<!-- 
 		<link-stylesheet ref="//slothsoft@slothsoft/css/default" />
 		<link-stylesheet ref="//slothsoft@slothsoft/css/layout" />
 		<link-stylesheet ref="//slothsoft@slothsoft/css/fonts" />
@@ -222,6 +225,7 @@
 		<use-document ref="//slothsoft@slothsoft/navi" name="navi" />
 		<use-document ref="//slothsoft@slothsoft/validator" name="validator" />
 		<use-document ref="//slothsoft@slothsoft/dict.select" name="dict.select" />
+		 -->
 	</fragment>
 	<fragment name="default">
 		<import ref="//slothsoft/default" />
