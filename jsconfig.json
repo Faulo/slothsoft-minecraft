@@ -7,6 +7,9 @@
       "/slothsoft@farah/*": [
         "../slothsoft-farah/assets/*"
       ],
+      "/slothsoft@minecraft/*": [
+        "./assets/*"
+      ],
       "/slothsoft@sse/*": [
         "../slothsoft-sse/assets/*"
       ]
