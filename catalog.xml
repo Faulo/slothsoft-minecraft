@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="farah://slothsoft@minecraft/xsl/_map" uri="assets/xsl/_map.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/functions" uri="assets/xsl/functions.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/home" uri="assets/xsl/home.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/infos" uri="assets/xsl/infos.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/law" uri="assets/xsl/law.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/log" uri="assets/xsl/log.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/log.content" uri="assets/xsl/log.content.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/mall" uri="assets/xsl/mall.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/maps" uri="assets/xsl/maps.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/news" uri="assets/xsl/news.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/pics" uri="assets/xsl/pics.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/players" uri="assets/xsl/players.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/status" uri="assets/xsl/status.xsl"/>
+  <uri name="farah://slothsoft@minecraft/xsl/workshop" uri="assets/xsl/workshop.xsl"/>
+</catalog>
