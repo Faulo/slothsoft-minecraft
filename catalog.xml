@@ -1,5 +1,9 @@
 <?xml version="1.0"?>
 <catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <uri name="farah://slothsoft@minecraft/dictionary/de-de" uri="assets/dictionary/de-de.xml"/>
+  <uri name="farah://slothsoft@minecraft/dictionary/en-us" uri="assets/dictionary/en-us.xml"/>
+  <uri name="farah://slothsoft@minecraft/static/log" uri="assets/static/log.xml"/>
+  <uri name="farah://slothsoft@minecraft/static/news" uri="assets/static/news.xml"/>
   <uri name="farah://slothsoft@minecraft/xsl/_map" uri="assets/xsl/_map.xsl"/>
   <uri name="farah://slothsoft@minecraft/xsl/functions" uri="assets/xsl/functions.xsl"/>
   <uri name="farah://slothsoft@minecraft/xsl/home" uri="assets/xsl/home.xsl"/>
