@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @todo auto-generated
  */
-class LogPagesDocumentTest extends TestCase {
+final class LogPagesDocumentTest extends TestCase {
     
     public function testClassExists(): void {
         $this->assertTrue(class_exists(LogPagesDocument::class), "Failed to load class 'Slothsoft\Minecraft\LogPagesDocument'!");

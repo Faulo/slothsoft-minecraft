@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @todo auto-generated
  */
-class StatusBuilderTest extends TestCase {
+final class StatusBuilderTest extends TestCase {
     
     public function testClassExists(): void {
         $this->assertTrue(class_exists(StatusBuilder::class), "Failed to load class 'Slothsoft\Minecraft\Assets\StatusBuilder'!");

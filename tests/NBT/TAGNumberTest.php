@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @todo auto-generated
  */
-class TAGNumberTest extends TestCase {
+final class TAGNumberTest extends TestCase {
     
     public function testClassExists(): void {
         $this->assertTrue(class_exists(TAGNumber::class), "Failed to load class 'Slothsoft\Minecraft\NBT\TAGNumber'!");

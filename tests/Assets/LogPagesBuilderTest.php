@@ -11,7 +11,7 @@ use PHPUnit\Framework\TestCase;
  *
  * @todo auto-generated
  */
-class LogPagesBuilderTest extends TestCase {
+final class LogPagesBuilderTest extends TestCase {
     
     public function testClassExists(): void {
         $this->assertTrue(class_exists(LogPagesBuilder::class), "Failed to load class 'Slothsoft\Minecraft\Assets\LogPagesBuilder'!");
