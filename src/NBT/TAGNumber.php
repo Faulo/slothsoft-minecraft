@@ -6,7 +6,11 @@ class TAGNumber extends TAGNode {
     
     private $bytes = 0;
     
-    public function loadPayload($size = 0, $mode = 0) {
+    public function loadPayload() {
+        $this->loadPayloadNumber();
+    }
+    
+    public function loadPayloadNumber(int $size = 0, int $mode = 0) {
         $this->bytes = $size;
         
         $offset = $this->getPayloadOffset();

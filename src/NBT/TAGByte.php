@@ -7,7 +7,7 @@ class TAGByte extends TAGNumber {
     const TYPE = 1;
     
     public function loadPayload() {
-        parent::loadPayload(1);
+        parent::loadPayloadNumber(1);
     }
 } 
 

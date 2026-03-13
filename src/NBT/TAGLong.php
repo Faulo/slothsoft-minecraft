@@ -7,7 +7,7 @@ class TAGLong extends TAGNumber {
     const TYPE = 4;
     
     public function loadPayload() {
-        parent::loadPayload(8);
+        parent::loadPayloadNumber(8);
     }
 } 
 

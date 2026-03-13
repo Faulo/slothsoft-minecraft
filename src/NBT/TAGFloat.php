@@ -7,7 +7,7 @@ class TAGFloat extends TAGNumber {
     const TYPE = 5;
     
     public function loadPayload() {
-        parent::loadPayload(4, 1);
+        parent::loadPayloadNumber(4, 1);
     }
 } 
 

@@ -7,7 +7,7 @@ class TAGDouble extends TAGNumber {
     const TYPE = 6;
     
     public function loadPayload() {
-        parent::loadPayload(8, 1);
+        parent::loadPayloadNumber(8, 1);
     }
 } 
 

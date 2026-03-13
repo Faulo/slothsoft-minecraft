@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-	<xsl:import href="/getTemplate.php/minecraft/functions" />
+    <xsl:import href="farah://slothsoft@minecraft/xsl/functions" />
 
-	<xsl:template match="/data">
+	<xsl:template match="/*">
 		<article class="minecraft-workshop">
 			<h2 data-dict="">workshop/head</h2>
 			<p data-dict="">workshop/title</p>

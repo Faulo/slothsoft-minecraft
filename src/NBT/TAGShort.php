@@ -7,7 +7,7 @@ class TAGShort extends TAGNumber {
     const TYPE = 2;
     
     public function loadPayload() {
-        parent::loadPayload(2);
+        parent::loadPayloadNumber(2);
     }
 } 
 

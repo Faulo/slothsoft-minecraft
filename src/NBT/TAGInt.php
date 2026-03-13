@@ -7,7 +7,7 @@ class TAGInt extends TAGNumber {
     const TYPE = 3;
     
     public function loadPayload() {
-        parent::loadPayload(4);
+        parent::loadPayloadNumber(4);
     }
 }
 
