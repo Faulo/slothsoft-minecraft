@@ -1,6 +1,6 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Minecraft;
+namespace Slothsoft\Minecraft\API;
 
 use Slothsoft\FarahTesting\Module\AbstractXmlManifestTest;
 
